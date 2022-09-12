@@ -1293,6 +1293,7 @@ html[data-display=mobile] body {
   font-size: 1.5rem;
   line-height: 1;
   font-family: "ceraPro-Bold";
+  color: var(--blue-grey-500);
 }
 .designsystem_content--ul[data-flex=row] {
   flex-wrap: wrap;
@@ -1307,5 +1308,92 @@ html[data-display=mobile] body {
   flex-basis: 33.33%;
 }
 .designsystem_content--li {
+  padding: 1rem;
+}
+
+.designsystem_typography .designsystem_content--li:hover .designsystem_typography--details {
+  opacity: 1;
+}
+.designsystem_typography h1.headline {
+  font-family: bold;
+  font-size: 6rem;
+  line-height: 1;
+  font-family: "ceraPro-Bold";
+}
+.designsystem_typography h2.headline {
+  font-family: bold;
+  font-size: 4rem;
+  line-height: 1;
+  font-family: "ceraPro-Bold";
+}
+.designsystem_typography h3.headline {
+  font-family: medium;
+  font-size: 3.5rem;
+  line-height: 1;
+  font-family: "ceraPro-Medium";
+}
+.designsystem_typography h4.headline {
+  font-family: medium;
+  font-size: 3rem;
+  line-height: 1;
+  font-family: "ceraPro-Medium";
+}
+.designsystem_typography h5.headline {
+  font-family: medium;
+  font-size: 2rem;
+  line-height: 1;
+  font-family: "ceraPro-Medium";
+}
+.designsystem_typography h6.headline {
+  font-family: medium;
+  font-size: 1.5rem;
+  line-height: 1;
+  font-family: "ceraPro-Medium";
+}
+.designsystem_typography h6.subtitle {
+  font-family: "ceraPro-Regular";
+  font-size: 1.25rem;
+  line-height: 1.2;
+}
+.designsystem_typography p.body-1 {
+  font-family: "ceraPro-Regular";
+  font-size: 1rem;
+  line-height: 1.4;
+}
+.designsystem_typography p.body-2 {
+  font-family: "ceraPro-Regular";
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+.designsystem_typography p.caption-1 {
+  font-family: bold;
+  font-size: 0.875rem;
+  line-height: 1;
+  text-transform: uppercase;
+  font-family: "ceraPro-Bold";
+}
+.designsystem_typography--details {
+  display: flex;
+  flex-direction: row;
+  font-family: monospace;
+  color: var(--blue-grey-500);
+  font-size: 0.875rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  opacity: 0.5;
+}
+.designsystem_typography--details li {
+  padding-right: 3.5rem;
+}
+.designsystem_typography--details h6 {
+  color: black;
+  font-weight: bold;
+  padding-top: 0.5rem;
+}
+
+.designsystem_structure h1,
+.designsystem_structure h2,
+.designsystem_structure p {
+  border: 2px dotted var(--codeAccademy-indigo);
   padding: 1rem;
 }/*# sourceMappingURL=styles.css.map */

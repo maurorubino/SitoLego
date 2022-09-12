@@ -146,6 +146,7 @@ $aside-width-size: 25%;
     padding: $size-16;
     h2 {
       @include headline-600(bold);
+      color: var(--blue-grey-500);
     }
   }
 
@@ -168,4 +169,86 @@ $aside-width-size: 25%;
   &--li {
     padding: $size-16;
   }
+}
+
+// *********************************************************************** Section Typography
+.designsystem_typography {
+
+  .designsystem_content--li {
+
+    &:hover {
+      .designsystem_typography--details {
+        opacity: 1;
+      }
+    }
+  }
+
+  h1.headline {
+    @include headline-100(bold);
+  }
+
+  h2.headline {
+    @include headline-200(bold);
+  }
+
+  h3.headline {
+    @include headline-300(medium);
+  }
+
+  h4.headline {
+    @include headline-400(medium);
+  }
+
+  h5.headline {
+    @include headline-500(medium);
+  }
+
+  h6.headline {
+    @include headline-600(medium);
+  }
+
+  h6.subtitle {
+    @include subtitle-100();
+  }
+
+  p.body-1 {
+    @include body-100();
+  }
+
+  p.body-2 {
+    @include body-200();
+  }
+
+  p.caption-1 {
+    @include caption-100(bold);
+  }
+
+  &--details {
+    display: flex;
+    flex-direction: row;
+    font-family: monospace;
+    color: var(--blue-grey-500);
+    font-size: $size-14;
+    padding-top: $size-16;
+    padding-bottom: $size-16;
+    opacity: 0.5;
+
+    li {
+      padding-right: $size-56;
+    }
+
+    h6 {
+      color: black;
+      font-weight: bold;
+      padding-top: $size-8;
+    }
+  }
+}
+
+// *********************************************************************** Section Design System Structure
+.designsystem_structure h1,
+.designsystem_structure h2,
+.designsystem_structure p {
+  border: 2px dotted var(--codeAccademy-indigo);
+  padding: $size-16;
 }
