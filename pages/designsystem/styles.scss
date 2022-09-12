@@ -1,5 +1,6 @@
 @import '../../main.scss';
 @import '../../components/colorSwatch/colorSwatch.scss';
+@import '../../components/starRating/starRating.scss';
 
 $aside-width-size: 25%;
 
@@ -88,6 +89,7 @@ $aside-width-size: 25%;
 
       li a {
         font-size: 0.875em;
+        color: var(--blue-grey-500);
       }
 
       li:first-child {
@@ -170,6 +172,26 @@ $aside-width-size: 25%;
 
   &--li {
     padding: $size-16;
+  }
+}
+
+.designsystem_form {
+  display: flex;
+  flex-direction: column;
+  font-family: monospace;
+  label {
+    font-size: $size-14;
+    font-weight: bold;
+    padding: $size-16 0;
+    color: var(--codeAccademy-indigo);
+  }
+  textarea {
+    width: 100%;
+    background-color: var(--blue-grey-50);
+    border-radius: 8px;
+    padding: $size-16;
+    font-size: $size-14;
+    color: var(--blue-grey-500);
   }
 }
 
