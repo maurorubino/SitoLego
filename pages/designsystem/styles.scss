@@ -1,5 +1,5 @@
 @import '../../main.scss';
-@import '../../components/colorSwatch_100/colorSwatch_100.scss';
+@import '../../components/colorSwatch/colorSwatch.scss';
 
 $aside-width-size: 25%;
 
@@ -130,6 +130,8 @@ $aside-width-size: 25%;
 
   p {
     @include subtitle-100();
+    font-size: $size-16;
+    font-family: monospace;
     padding-top: $size-16;
   }
 }
