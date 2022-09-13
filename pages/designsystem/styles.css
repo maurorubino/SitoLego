@@ -2277,6 +2277,7 @@ form.inputEmailSubscription input:focus ~ .inputEmailSubscription--focus {
 
 .designsystem_content[data-theme=dark] {
   background-color: var(--codeAccademy-navy);
+  border: 0;
 }
 .designsystem_content[data-theme=dark] header h2 {
   color: white;

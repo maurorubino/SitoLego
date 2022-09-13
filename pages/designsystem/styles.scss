@@ -198,6 +198,7 @@ $aside-width-size: 25%;
 
 .designsystem_content[data-theme="dark"] {
   background-color: var(--codeAccademy-navy);
+  border: 0;
   & header h2 {
     color: white;
   }
