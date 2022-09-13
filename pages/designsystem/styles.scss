@@ -1,0 +1,301 @@
+@import '../../main.scss';
+@import '../../components/colorSwatch/colorSwatch.scss';
+@import '../../components/starRating/starRating.scss';
+@import '../../components/inputEmailSubscription/inputEmailSubscription.scss';
+
+$aside-width-size: 25%;
+
+.designsystem {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: var(--codeAccademy-beige);
+}
+
+.designsystem_aside {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: $aside-width-size;
+  background-color: var(--codeAccademy-yellow);
+  background-color: white;
+  border-right: 1px solid black;
+  padding: 1rem;
+  overflow-y: auto;
+
+  header {
+    display: flex;
+    flex-direction: column;
+    padding: $size-32 $size-16;
+    h6 {
+      color: black;
+      font-family: monospace;
+      font-weight: bold;
+      font-size: $size-32;
+      line-height: 1.2;
+    }
+  }// Header
+
+  ol {
+    display: flex;
+    flex-direction: column;
+    padding: $size-16;
+    list-style-type: decimal-leading-zero;
+    list-style-position: inside;
+
+    & > li {
+      padding: $size-16;
+
+      padding-left: 0;
+      color: var(--blue-grey-300);
+      color: black;
+      font-family: monospace;
+
+      &.active {
+        color: black;
+        
+        & > a {  
+          color: black;
+          font-weight: bold;
+        }
+
+        & a {
+          color: black;
+        }
+      }
+
+      a {
+        text-decoration: none;
+        color: var(--blue-grey-300);
+        color: black;
+        font-size: $size-16;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    } // li
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      padding-left: $size-40;
+
+      li {
+        padding: $size-8 0;
+      }
+
+      li a {
+        font-size: 0.875em;
+        color: var(--blue-grey-500);
+      }
+
+      li:first-child {
+        padding-top: $size-16;
+      }
+    }
+  }// Ol
+}// Design System aside
+
+.designsystem_main {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - $aside-width-size);
+  align-items: center;
+}
+
+.designsystem_container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 940px;
+  padding: $size-16 $size-96;
+}
+
+.designsystem_section {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: $size-48;
+}
+
+.designsystem_header,
+.designsystem_header--2 {
+  display: flex;
+  flex-direction: column;
+  padding: $size-16 0;
+
+  h1 {
+    @include headline-400(bold);
+    padding: $size-16 0;
+  }
+
+  p {
+    @include subtitle-100();
+    font-size: $size-16;
+    font-family: monospace;
+    padding-top: $size-16;
+  }
+}
+
+.designsystem_header--2 {
+  padding-top: $size-32;
+}
+
+.designsystem_content {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: 1px solid black;
+  padding: $size-16;
+  margin: $size-32 0;
+
+  &--header {
+    padding: $size-16;
+    h2 {
+      @include headline-600(bold);
+      color: var(--blue-grey-500);
+    }
+  }
+
+  &--ul[data-flex=row] {
+    flex-wrap: wrap;
+  }
+
+  &--li[data-width=size1] {
+    flex-basis: 100%;
+  }
+
+  &--li[data-width=size2] {
+    flex-basis: 50%;
+  }
+
+  &--li[data-width=size3] {
+    flex-basis: 33.33%;
+  }
+
+  &--li {
+    padding: $size-16;
+  }
+}
+
+.designsystem_form {
+  display: flex;
+  flex-direction: column;
+  font-family: monospace;
+  label {
+    font-size: $size-14;
+    font-weight: bold;
+    padding: $size-16 0;
+    color: var(--codeAccademy-indigo);
+  }
+  textarea {
+    width: 100%;
+    background-color: var(--blue-grey-50);
+    border-radius: 8px;
+    padding: $size-16;
+    font-size: $size-14;
+    color: var(--blue-grey-500);
+  }
+}
+
+.designsystem_content[data-theme="dark"] {
+  background-color: var(--codeAccademy-navy);
+  border: 0;
+  & header h2 {
+    color: white;
+  }
+
+  .designsystem_form label {
+    color: var(--codeAccademy-yellow);
+  }
+
+  .designsystem_form textarea {
+    background-color: var(--indigo-900);
+    color: var(--indigo-100);
+  }
+}
+
+// *********************************************************************** Section Typography
+.designsystem_typography {
+
+  .designsystem_content--li {
+
+    &:hover {
+      .designsystem_typography--details {
+        opacity: 1;
+      }
+    }
+  }
+
+  h1.headline {
+    @include headline-100(bold);
+  }
+
+  h2.headline {
+    @include headline-200(bold);
+  }
+
+  h3.headline {
+    @include headline-300(medium);
+  }
+
+  h4.headline {
+    @include headline-400(medium);
+  }
+
+  h5.headline {
+    @include headline-500(medium);
+  }
+
+  h6.headline {
+    @include headline-600(medium);
+  }
+
+  h6.subtitle {
+    @include subtitle-100();
+  }
+
+  p.body-1 {
+    @include body-100();
+  }
+
+  p.body-2 {
+    @include body-200();
+  }
+
+  p.caption-1 {
+    @include caption-100(bold);
+  }
+
+  &--details {
+    display: flex;
+    flex-direction: row;
+    font-family: monospace;
+    color: var(--blue-grey-500);
+    font-size: $size-14;
+    padding-top: $size-16;
+    padding-bottom: $size-16;
+    opacity: 0.5;
+
+    li {
+      padding-right: $size-56;
+    }
+
+    h6 {
+      color: black;
+      font-weight: bold;
+      padding-top: $size-8;
+    }
+  }
+}
+
+// *********************************************************************** Section Design System Structure
+.designsystem_structure h1,
+.designsystem_structure h2,
+.designsystem_structure p {
+  border: 2px dotted var(--codeAccademy-indigo);
+  padding: $size-16;
+}
