@@ -9,7 +9,7 @@ $aside-width-size: 25%;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  background-color: var(--codeAccademy-beige);
+  // background-color: var(--codeAccademy-beige);
 }
 
 .designsystem_aside {
@@ -125,7 +125,8 @@ $aside-width-size: 25%;
 .designsystem_header--2 {
   display: flex;
   flex-direction: column;
-  padding: $size-16 0;
+  padding: $size-16;
+  padding-top: $size-32;
 
   h1 {
     @include headline-400(bold);
@@ -140,24 +141,34 @@ $aside-width-size: 25%;
   }
 }
 
-.designsystem_header--2 {
-  padding-top: $size-32;
-}
-
 .designsystem_content {
   display: flex;
   flex-direction: column;
   background-color: white;
-  border: 1px solid black;
-  padding: $size-16;
-  margin: $size-32 0;
+  // border: 1px solid black;
+  border-radius: $size-16;
+  // padding: $size-16;
+  margin: $size-48 0;
 
   &--header {
     padding: $size-16;
     h2 {
       @include headline-600(bold);
-      color: var(--blue-grey-500);
+      color: var(--codeAccademy-indigo);
     }
+  }
+
+  &--ul[data-highlight] {
+    margin: $size-16;
+    padding: $size-32;
+  }
+
+  &--ul[data-highlight="light"] {
+    border: 1px solid black;
+  }
+
+  &--ul[data-highlight="dark"] {
+    background-color: var(--codeAccademy-navy);
   }
 
   &--ul[data-flex=row] {
@@ -198,23 +209,6 @@ $aside-width-size: 25%;
     padding: $size-16;
     font-size: $size-14;
     color: var(--blue-grey-500);
-  }
-}
-
-.designsystem_content[data-theme="dark"] {
-  background-color: var(--codeAccademy-navy);
-  border: 0;
-  & header h2 {
-    color: white;
-  }
-
-  .designsystem_form label {
-    color: var(--codeAccademy-yellow);
-  }
-
-  .designsystem_form textarea {
-    background-color: var(--indigo-900);
-    color: var(--indigo-100);
   }
 }
 
