@@ -13,7 +13,6 @@
 @media only screen and (max-width: 1024px) {
   .Button-Head-Account > span {
     border: 0px;
-    clip: rect(0px, 0px, 0px, 0px);
     height: 1px;
     margin: -1px;
     overflow: hidden;
