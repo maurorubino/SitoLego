@@ -57,6 +57,10 @@ table {
   border-spacing: 0;
 }
 
+a {
+  cursor: pointer;
+}
+
 html[data-display=mobile] {
   display: flex;
   flex-direction: column;
@@ -449,6 +453,10 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+a {
+  cursor: pointer;
 }
 
 html[data-display=mobile] {
@@ -1215,6 +1223,10 @@ table {
   border-spacing: 0;
 }
 
+a {
+  cursor: pointer;
+}
+
 html[data-display=mobile] {
   display: flex;
   flex-direction: column;
@@ -1679,6 +1691,10 @@ table {
   border-spacing: 0;
 }
 
+a {
+  cursor: pointer;
+}
+
 html[data-display=mobile] {
   display: flex;
   flex-direction: column;
@@ -2100,10 +2116,11 @@ form.inputEmailSubscription input:focus ~ .inputEmailSubscription--focus {
   box-shadow: 0 0 32px var(--lego-blue);
 }
 
-.designsystem {
+body.designsystem {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  background-color: white;
 }
 
 .designsystem_aside {
@@ -2113,79 +2130,85 @@ form.inputEmailSubscription input:focus ~ .inputEmailSubscription--focus {
   top: 0;
   left: 0;
   bottom: 0;
-  width: 25%;
-  background-color: var(--codeAccademy-yellow);
+  width: 20%;
   background-color: white;
-  border-right: 1px solid black;
   padding: 1rem;
+  padding-top: 2rem;
   overflow-y: auto;
 }
 .designsystem_aside header {
   display: flex;
   flex-direction: column;
-  padding: 2rem 1rem;
+  padding: 1rem;
 }
 .designsystem_aside header h6 {
   color: black;
+  font-family: bold;
+  font-size: 1.5rem;
+  line-height: 1;
+  font-family: "ceraPro-Bold";
+}
+.designsystem_aside ul {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
   font-family: monospace;
+}
+.designsystem_aside ul > li {
+  padding: 1rem 0;
+}
+.designsystem_aside ul > li:nth-child(1) > a, .designsystem_aside ul > li:nth-child(1) ol li {
+  color: var(--pink-500);
+}
+.designsystem_aside ul > li:nth-child(2) > a, .designsystem_aside ul > li:nth-child(2) ol li {
+  color: var(--blue-500);
+}
+.designsystem_aside ul > li:nth-child(3) > a, .designsystem_aside ul > li:nth-child(3) ol li {
+  color: var(--green-500);
+}
+.designsystem_aside ul > li > a {
+  font-size: 1rem;
+  color: black;
   font-weight: bold;
-  font-size: 2rem;
-  line-height: 1.2;
+}
+.designsystem_aside ul a {
+  text-decoration: none;
+}
+.designsystem_aside ul a:hover {
+  text-decoration: underline;
 }
 .designsystem_aside ol {
   display: flex;
   flex-direction: column;
-  padding: 1rem;
   list-style-type: decimal-leading-zero;
   list-style-position: inside;
 }
-.designsystem_aside ol > li {
-  padding: 1rem;
-  padding-left: 0;
-  color: var(--blue-grey-300);
-  color: black;
-  font-family: monospace;
+.designsystem_aside ol li:first-child {
+  padding-top: 1rem;
 }
-.designsystem_aside ol > li.active {
-  color: black;
-}
-.designsystem_aside ol > li.active > a {
-  color: black;
+.designsystem_aside ol li {
+  font-size: 0.875rem;
+  padding: 0.5rem 0;
   font-weight: bold;
 }
-.designsystem_aside ol > li.active a {
-  color: black;
-}
-.designsystem_aside ol > li a {
-  text-decoration: none;
-  color: var(--blue-grey-300);
-  color: black;
-  font-size: 1rem;
-}
-.designsystem_aside ol > li a:hover {
-  text-decoration: underline;
-}
-.designsystem_aside ol ul {
-  display: flex;
-  flex-direction: column;
-  padding-left: 2.5rem;
-}
-.designsystem_aside ol ul li {
-  padding: 0.5rem 0;
-}
-.designsystem_aside ol ul li a {
-  font-size: 0.875em;
+.designsystem_aside ol li a {
   color: var(--blue-grey-500);
-}
-.designsystem_aside ol ul li:first-child {
-  padding-top: 1rem;
+  color: black;
+  font-weight: normal;
 }
 
 .designsystem_main {
   display: flex;
   flex-direction: column;
-  width: 75%;
+  width: 80%;
+}
+
+.designsystem_section {
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  border-left: 1px solid black;
+  padding: 3rem 0;
 }
 
 .designsystem_container {
@@ -2193,36 +2216,24 @@ form.inputEmailSubscription input:focus ~ .inputEmailSubscription--focus {
   flex-direction: column;
   width: 100%;
   max-width: 940px;
-  padding: 1rem 6rem;
+  padding: 0 3rem;
 }
 
-.designsystem_section {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 3rem;
-}
-
-.designsystem_header,
-.designsystem_header--2 {
+.designsystem_header {
   display: flex;
   flex-direction: column;
   padding: 1rem;
-  padding-top: 2rem;
 }
-.designsystem_header h1,
-.designsystem_header--2 h1 {
+.designsystem_header h1 {
   font-family: bold;
   font-size: 3rem;
   line-height: 1;
   font-family: "ceraPro-Bold";
   padding: 1rem 0;
 }
-.designsystem_header p,
-.designsystem_header--2 p {
-  font-family: "ceraPro-Regular";
-  font-size: 1.25rem;
-  line-height: 1.2;
+.designsystem_header p {
   font-size: 1rem;
+  line-height: 1.4;
   font-family: monospace;
   padding-top: 1rem;
 }
@@ -2230,44 +2241,60 @@ form.inputEmailSubscription input:focus ~ .inputEmailSubscription--focus {
 .designsystem_content {
   display: flex;
   flex-direction: column;
-  background-color: white;
-  border-radius: 1rem;
-  margin: 3rem 0;
+  margin: 2rem 0;
 }
+
 .designsystem_content--header {
   padding: 1rem;
+  margin: 1rem 0;
 }
 .designsystem_content--header h2 {
   font-family: bold;
   font-size: 1.5rem;
   line-height: 1;
   font-family: "ceraPro-Bold";
-  color: var(--codeAccademy-indigo);
+  color: black;
 }
+
 .designsystem_content--ul[data-highlight] {
   margin: 1rem;
   padding: 2rem;
 }
+
 .designsystem_content--ul[data-highlight=light] {
   border: 1px solid black;
 }
+
 .designsystem_content--ul[data-highlight=dark] {
   background-color: var(--codeAccademy-navy);
 }
+
 .designsystem_content--ul[data-flex=row] {
   flex-wrap: wrap;
 }
+
+.designsystem_content--li {
+  padding: 1rem;
+}
+
 .designsystem_content--li[data-width=size1] {
   flex-basis: 100%;
 }
+
 .designsystem_content--li[data-width=size2] {
   flex-basis: 50%;
 }
+
 .designsystem_content--li[data-width=size3] {
   flex-basis: 33.33%;
 }
-.designsystem_content--li {
-  padding: 1rem;
+
+.designsystem_content--li[data-width=size4] {
+  flex-basis: 25%;
+}
+
+.designsystem_content--li[data-width=size5] {
+  flex-basis: 20%;
 }
 
 .designsystem_form {
@@ -2279,79 +2306,94 @@ form.inputEmailSubscription input:focus ~ .inputEmailSubscription--focus {
   font-size: 0.875rem;
   font-weight: bold;
   padding: 1rem 0;
-  color: var(--codeAccademy-indigo);
+  color: black;
 }
 .designsystem_form textarea {
   width: 100%;
   background-color: var(--blue-grey-50);
   border-radius: 8px;
-  padding: 1rem;
+  padding: 2rem;
   font-size: 0.875rem;
   color: var(--blue-grey-500);
 }
 
-.designsystem_typography .designsystem_content--li:hover .designsystem_typography--details {
+.designsystem_section--colors {
+  border-color: var(--pink-500);
+}
+.designsystem_section--colors .designsystem_header h1,
+.designsystem_section--colors .designsystem_content--header h2 span {
+  color: var(--pink-500);
+}
+
+.designsystem_section--typography {
+  border-color: var(--blue-500);
+}
+.designsystem_section--typography .designsystem_header h1,
+.designsystem_section--typography .designsystem_content--header h2 span {
+  color: var(--blue-500);
+}
+.designsystem_section--typography .designsystem_content--li:hover .designsystem_typography--details {
   opacity: 1;
 }
-.designsystem_typography h1.headline {
+.designsystem_section--typography h1.headline {
   font-family: bold;
   font-size: 6rem;
   line-height: 1;
   font-family: "ceraPro-Bold";
 }
-.designsystem_typography h2.headline {
+.designsystem_section--typography h2.headline {
   font-family: bold;
   font-size: 4rem;
   line-height: 1;
   font-family: "ceraPro-Bold";
 }
-.designsystem_typography h3.headline {
+.designsystem_section--typography h3.headline {
   font-family: medium;
   font-size: 3.5rem;
   line-height: 1;
   font-family: "ceraPro-Medium";
 }
-.designsystem_typography h4.headline {
+.designsystem_section--typography h4.headline {
   font-family: medium;
   font-size: 3rem;
   line-height: 1;
   font-family: "ceraPro-Medium";
 }
-.designsystem_typography h5.headline {
+.designsystem_section--typography h5.headline {
   font-family: medium;
   font-size: 2rem;
   line-height: 1;
   font-family: "ceraPro-Medium";
 }
-.designsystem_typography h6.headline {
+.designsystem_section--typography h6.headline {
   font-family: medium;
   font-size: 1.5rem;
   line-height: 1;
   font-family: "ceraPro-Medium";
 }
-.designsystem_typography h6.subtitle {
+.designsystem_section--typography h6.subtitle {
   font-family: "ceraPro-Regular";
   font-size: 1.25rem;
   line-height: 1.2;
 }
-.designsystem_typography p.body-1 {
+.designsystem_section--typography p.body-1 {
   font-family: "ceraPro-Regular";
   font-size: 1rem;
   line-height: 1.4;
 }
-.designsystem_typography p.body-2 {
+.designsystem_section--typography p.body-2 {
   font-family: "ceraPro-Regular";
   font-size: 0.875rem;
   line-height: 1.4;
 }
-.designsystem_typography p.caption-1 {
+.designsystem_section--typography p.caption-1 {
   font-family: bold;
   font-size: 0.875rem;
   line-height: 1;
   text-transform: uppercase;
   font-family: "ceraPro-Bold";
 }
-.designsystem_typography--details {
+.designsystem_section--typography .designsystem_typography--details {
   display: flex;
   flex-direction: row;
   font-family: monospace;
@@ -2361,13 +2403,22 @@ form.inputEmailSubscription input:focus ~ .inputEmailSubscription--focus {
   padding-bottom: 1rem;
   opacity: 0.5;
 }
-.designsystem_typography--details li {
+.designsystem_section--typography .designsystem_typography--details li {
   padding-right: 3.5rem;
 }
-.designsystem_typography--details h6 {
+.designsystem_section--typography .designsystem_typography--details h6 {
   color: black;
   font-weight: bold;
   padding-top: 0.5rem;
+}
+
+.designsystem_section--components {
+  border-color: var(--green-500);
+}
+.designsystem_section--components .designsystem_header h1,
+.designsystem_section--components .designsystem_content--header h2 span,
+.designsystem_section--components .designsystem_form label {
+  color: var(--green-500);
 }
 
 .designsystem_structure h1,
