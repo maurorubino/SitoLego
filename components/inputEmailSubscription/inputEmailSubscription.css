@@ -391,4 +391,89 @@ html[data-display=mobile] body {
 @font-face {
   font-family: "ceraPro-Black";
   src: url(../../assets/fonts/cera_pro_sv/woff2/CeraPro-Black.woff2);
-}/*# sourceMappingURL=main.css.map */
+}
+html[data-display=mobile] body {
+  background-color: var(--lego-indigo);
+}
+
+form.inputEmailSubscription {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+form.inputEmailSubscription input {
+  position: relative;
+  z-index: 2;
+  flex-grow: 1;
+  height: 100%;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  padding: 0 1rem;
+  padding-top: 0.5rem;
+  font-family: medium;
+  font-size: 1rem;
+  line-height: 1.4;
+  font-family: "ceraPro-Medium";
+  color: black;
+}
+form.inputEmailSubscription h6 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: "ceraPro-Regular";
+  font-size: 0.875rem;
+  line-height: 1.4;
+  line-height: 1;
+  padding: 0 1rem;
+  pointer-events: none;
+  color: var(--blue-grey-500);
+  z-index: 2;
+  transition: all 0.3s ease-out;
+}
+form.inputEmailSubscription button {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  flex-grow: 0;
+  cursor: pointer;
+  background-color: var(--lego-orange);
+  font-weight: bold;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+form.inputEmailSubscription button svg {
+  width: 10px;
+  height: auto;
+}
+form.inputEmailSubscription button:active {
+  filter: brightness(75%);
+}
+form.inputEmailSubscription .inputEmailSubscription--focus {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  pointer-events: none;
+  box-shadow: 0 0 0 var(--lego-blue);
+  transition: all 0.3s ease-out;
+}
+form.inputEmailSubscription input:focus {
+  border: 0;
+  outline: 0;
+}
+form.inputEmailSubscription input:focus ~ h6,
+form.inputEmailSubscription input:not([value=""]) ~ h6 {
+  top: 27%;
+  font-size: 12px;
+}
+form.inputEmailSubscription input:focus ~ .inputEmailSubscription--focus {
+  box-shadow: 0 0 32px var(--lego-blue);
+}/*# sourceMappingURL=inputEmailSubscription.css.map */
