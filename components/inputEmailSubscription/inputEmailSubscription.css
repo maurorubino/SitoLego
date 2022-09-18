@@ -57,6 +57,10 @@ table {
   border-spacing: 0;
 }
 
+a {
+  cursor: pointer;
+}
+
 html[data-display=mobile] {
   display: flex;
   flex-direction: column;
@@ -469,8 +473,16 @@ form.inputEmailSubscription input:focus {
   border: 0;
   outline: 0;
 }
+form.inputEmailSubscription input:not(:-moz-placeholder-shown) ~ h6 {
+  top: 27%;
+  font-size: 12px;
+}
+form.inputEmailSubscription input:not(:-ms-input-placeholder) ~ h6 {
+  top: 27%;
+  font-size: 12px;
+}
 form.inputEmailSubscription input:focus ~ h6,
-form.inputEmailSubscription input:not([value=""]) ~ h6 {
+form.inputEmailSubscription input:not(:placeholder-shown) ~ h6 {
   top: 27%;
   font-size: 12px;
 }

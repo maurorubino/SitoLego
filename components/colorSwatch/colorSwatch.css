@@ -57,6 +57,10 @@ table {
   border-spacing: 0;
 }
 
+a {
+  cursor: pointer;
+}
+
 html[data-display=mobile] {
   display: flex;
   flex-direction: column;
