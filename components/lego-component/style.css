@@ -6,6 +6,7 @@
   align-items: center;
 }
 .display-images #novità {
+  padding-top: 7px;
   text-decoration: none;
 }
 .display-images #novità:hover {
