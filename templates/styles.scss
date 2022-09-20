@@ -1,0 +1,31 @@
+@import '../main.scss';
+
+body {
+  background-color: white;
+  padding: $size-16;
+
+}
+
+@media only screen and (min-width: $laptop) {
+  body {
+    padding: 0 $size-48;
+    padding-bottom: $size-96;
+  }
+}
+
+.templatesHeader {
+  display: flex;
+  flex-direction: column;
+  max-width: $tablet;
+  padding: $size-96 0 $size-48 0;
+
+  h2 {
+    @include headline-500(bold);
+  }
+
+  p {
+    @include subtitle-100();
+    padding-top: $size-16;
+    color: var(--blue-grey-500);
+  }
+}
