@@ -1,0 +1,13 @@
+@charset "UTF-8";
+.display-images {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.display-images #novità {
+  text-decoration: none;
+}
+.display-images #novità:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=style.css.map */
