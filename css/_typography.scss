@@ -23,6 +23,10 @@
   src: url(../../assets/fonts/cera_pro_sv/woff2/CeraPro-Black.woff2);
 }
 
+body {
+  font-family: "ceraPro-Regular", sans-serif;
+}
+
 @mixin headline-100($weight: "ceraPro-Regular") {
   font-family: $weight;
   font-size: $size-96;
