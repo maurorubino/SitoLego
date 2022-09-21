@@ -79,8 +79,14 @@ form.inputEmailSubscription {
     outline: 0;
   }
 
+  // input:focus ~ h6,
+  // input:not([value=""]) ~ h6 {
+  //   top: 27%;
+  //   font-size: 12px;
+  // }
+
   input:focus ~ h6,
-  input:not([value=""]) ~ h6 {
+  input:not(:placeholder-shown) ~ h6 {
     top: 27%;
     font-size: 12px;
   }
