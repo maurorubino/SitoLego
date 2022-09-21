@@ -1,25 +1,6 @@
 @import '../main.scss';
-
-body {
-  background-color: white;
-  padding-bottom: $size-96;
-}
-
-.templatesHeader {
-  display: flex;
-  flex-direction: column;
-  max-width: $tablet;
-  padding: $size-96 $size-32;
-  text-align: center;
-  margin: 0 auto;
-
-  h2 {
-    @include headline-500(bold);
-  }
-
-  p {
-    @include subtitle-100();
-    padding-top: $size-16;
-    color: var(--blue-grey-500);
-  }
-}
+@import 'navBar/navBar.scss';
+@import 'bannerBig/bigBanner.scss';
+@import 'bannerSmall/smallBanner.scss';
+@import 'quickLinks/quickLinks.scss';
+@import 'slider/slider.scss';
