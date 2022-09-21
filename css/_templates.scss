@@ -1,5 +1,20 @@
 [data-skeleton=true] * {
   border: 1px solid hotpink;
+  border: 1px solid lime;
+}
+
+.templates-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: $laptop-medium;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: $mobile-large) {
+  .templates-container {
+    padding: 0 $size-96;
+  }
 }
 
 /* =========================================================== Template 100 */
@@ -155,12 +170,50 @@
   flex-direction: column;
 }
 
+.template200-display {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  picture {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
 .template200-content {
   display: flex;
   flex-direction: column;
+  text-align: center;
+  padding: $size-24;
+}
+
+.template200[data-theme=light] .template200-content{
+  background-color: white;
+  color: black;
+}
+
+.template200[data-theme=dark] .template200-content{
   background-color: black;
   color: white;
-  text-align: center;
+}
+
+.template200-content h3,
+.template200-content p {
+  padding: $size-8 0;
+}
+
+.template200-content h3 {
+  @include subtitle-100(medium);
+}
+
+.template200-content p {
+  @include body-200(regular);
 }
 
 .template200-btnGroup {
@@ -172,4 +225,138 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  padding: $size-8 0;
+}
+
+@media only screen and (min-width: $mobile-large) {
+  .template200 {
+    justify-content: center;
+    align-items: center;
+  }
+  .template200 .templates-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+  }
+  .template200[data-position=right] .templates-container {
+    align-items: flex-end;
+    .template200-content {
+      text-align: right;
+    }
+    .template200-btnGroup {
+      justify-content: right;
+    }
+  }
+  .template200[data-position=left] .templates-container{
+    align-items: flex-start;
+    .template200-content {
+      text-align: left;
+    }
+    .template200-btnGroup {
+      justify-content: left;
+    }
+  }
+  .template200-content {
+    width: 50%;
+    padding: 0;
+  }
+  .template200[data-theme=dark] .template200-content,
+  .template200[data-theme=light] .template200-content {
+    background-color: transparent;
+  }
+  .template200-content h3 {
+    @include headline-400(regular);
+    padding: $size-16 0;
+  }
+  .template200-content p {
+    @include subtitle-100(regular);
+    padding: $size-16 0;
+  }
+  .template200-btnGroup {
+    flex-direction: row;
+    padding: $size-16 0;
+
+    li:first-child {
+      padding-right: $size-16;
+    }
+  }
+}
+
+/* =========================================================== Template 210 */
+.template210 {
+  @media only screen and (min-width: $mobile-large) {
+    .template200-content p {
+      @include headline-600(regular);
+      padding-top: 0;
+    }
+    .template200-btnGroup {
+      padding: 0;
+    }
+    .template200-btnContainer,
+    .template200-btnContainer:first-child {
+      padding: 0;
+    }
+  }
+}
+
+/* =========================================================== Template 300 */
+.template300 {
+  display: flex;
+  flex-direction: column;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: $size-8;
+
+    li {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 25%;
+      padding: $size-8;
+      text-align: center;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      a:hover {
+        text-decoration: underline;
+        color: var(--lego-blue);
+      }
+      h6 {
+        @include body-200(medium);
+        padding: $size-8 0;
+      }
+    }
+  }
+
+  @media only screen and (min-width: $mobile-large) {
+    ul {
+      flex-wrap: nowrap;
+      padding: 0;
+    }
+    ul li {
+      flex-basis: 12.5%;
+      padding: 0;
+      margin: $size-16;
+      &:first-child {
+        margin-left: 0;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    ul li img {
+      margin-bottom: $size-16;
+    }
+    ul li h6 {
+      padding: 0;
+    }
+  }
 }

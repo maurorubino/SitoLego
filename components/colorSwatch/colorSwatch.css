@@ -402,8 +402,22 @@ body {
 
 [data-skeleton=true] * {
   border: 1px solid hotpink;
+  border: 1px solid lime;
 }
 
+.templates-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 425px) {
+  .templates-container {
+    padding: 0 6rem;
+  }
+}
 /* =========================================================== Template 100 */
 .template100 {
   display: flex;
@@ -539,12 +553,56 @@ body {
   flex-direction: column;
 }
 
+.template200-display {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.template200-display picture {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+.template200-display picture img {
+  width: 100%;
+  height: auto;
+}
+
 .template200-content {
   display: flex;
   flex-direction: column;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.template200[data-theme=light] .template200-content {
+  background-color: white;
+  color: black;
+}
+
+.template200[data-theme=dark] .template200-content {
   background-color: black;
   color: white;
-  text-align: center;
+}
+
+.template200-content h3,
+.template200-content p {
+  padding: 0.5rem 0;
+}
+
+.template200-content h3 {
+  font-family: medium;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  font-family: "ceraPro-Medium";
+}
+
+.template200-content p {
+  font-family: regular;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  font-family: "ceraPro-Regular";
 }
 
 .template200-btnGroup {
@@ -556,6 +614,144 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  padding: 0.5rem 0;
+}
+
+@media only screen and (min-width: 425px) {
+  .template200 {
+    justify-content: center;
+    align-items: center;
+  }
+  .template200 .templates-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+  }
+  .template200[data-position=right] .templates-container {
+    align-items: flex-end;
+  }
+  .template200[data-position=right] .templates-container .template200-content {
+    text-align: right;
+  }
+  .template200[data-position=right] .templates-container .template200-btnGroup {
+    justify-content: right;
+  }
+  .template200[data-position=left] .templates-container {
+    align-items: flex-start;
+  }
+  .template200[data-position=left] .templates-container .template200-content {
+    text-align: left;
+  }
+  .template200[data-position=left] .templates-container .template200-btnGroup {
+    justify-content: left;
+  }
+  .template200-content {
+    width: 50%;
+    padding: 0;
+  }
+  .template200[data-theme=dark] .template200-content,
+.template200[data-theme=light] .template200-content {
+    background-color: transparent;
+  }
+  .template200-content h3 {
+    font-family: regular;
+    font-size: 3rem;
+    line-height: 1;
+    font-family: "ceraPro-Regular";
+    padding: 1rem 0;
+  }
+  .template200-content p {
+    font-family: regular;
+    font-size: 1.25rem;
+    line-height: 1.2;
+    font-family: "ceraPro-Regular";
+    padding: 1rem 0;
+  }
+  .template200-btnGroup {
+    flex-direction: row;
+    padding: 1rem 0;
+  }
+  .template200-btnGroup li:first-child {
+    padding-right: 1rem;
+  }
+}
+/* =========================================================== Template 210 */
+@media only screen and (min-width: 425px) {
+  .template210 .template200-content p {
+    font-family: regular;
+    font-size: 1.5rem;
+    line-height: 1;
+    font-family: "ceraPro-Regular";
+    padding-top: 0;
+  }
+  .template210 .template200-btnGroup {
+    padding: 0;
+  }
+  .template210 .template200-btnContainer,
+.template210 .template200-btnContainer:first-child {
+    padding: 0;
+  }
+}
+
+/* =========================================================== Template 300 */
+.template300 {
+  display: flex;
+  flex-direction: column;
+}
+.template300 ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0.5rem;
+}
+.template300 ul li {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 25%;
+  padding: 0.5rem;
+  text-align: center;
+}
+.template300 ul li img {
+  width: 100%;
+  height: auto;
+}
+.template300 ul li a {
+  text-decoration: none;
+  color: black;
+}
+.template300 ul li a:hover {
+  text-decoration: underline;
+  color: var(--lego-blue);
+}
+.template300 ul li h6 {
+  font-family: medium;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  font-family: "ceraPro-Medium";
+  padding: 0.5rem 0;
+}
+@media only screen and (min-width: 425px) {
+  .template300 ul {
+    flex-wrap: nowrap;
+    padding: 0;
+  }
+  .template300 ul li {
+    flex-basis: 12.5%;
+    padding: 0;
+    margin: 1rem;
+  }
+  .template300 ul li:first-child {
+    margin-left: 0;
+  }
+  .template300 ul li:last-child {
+    margin-right: 0;
+  }
+  .template300 ul li img {
+    margin-bottom: 1rem;
+  }
+  .template300 ul li h6 {
+    padding: 0;
+  }
 }
 
 .colorSwatch[data-type=square] {
