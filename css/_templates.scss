@@ -128,6 +128,7 @@
   }
 
   .template100-row2 {
+    height: $size-80;
     padding: 0 $size-32;
     background-color: var(--lego-yellow);
   }
@@ -141,7 +142,7 @@
     flex-grow: 1;
 
     li {
-      padding: 0 $size-32;
+      padding: 0 $size-24;
     }
 
     li:first-child {
@@ -203,6 +204,16 @@
   color: white;
 }
 
+.template200[data-theme=purple] .template200-content{
+  background-color: #130e2f;
+  color: white;
+}
+
+.template200[data-theme=blue] .template200-content{
+  background-color: var(--blue-800);
+  color: white;
+}
+
 .template200-content h3,
 .template200-content p {
   padding: $size-8 0;
@@ -261,7 +272,9 @@
     padding: 0;
   }
   .template200[data-theme=dark] .template200-content,
-  .template200[data-theme=light] .template200-content {
+  .template200[data-theme=light] .template200-content,
+  .template200[data-theme=purple] .template200-content,
+  .template200[data-theme=blue] .template200-content {
     background-color: transparent;
   }
   .template200-content h3 {
@@ -357,6 +370,75 @@
     }
     ul li h6 {
       padding: 0;
+    }
+  }
+}
+
+/* =========================================================== Template 400 */
+.template400 {
+  display: flex;
+  flex-direction: column;
+
+  .template400-ul {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    padding-bottom: $size-16;
+    padding-left: $size-8;
+    padding-right: $size-8;
+  }
+
+  /* Scrollbar height */
+  .template400-ul::-webkit-scrollbar {
+    height: 5px;
+    cursor: pointer;
+  }
+
+  /* Scrollbar Track */
+  .template400-ul::-webkit-scrollbar-track {
+    background: var(--grey-300); 
+    border-radius: 2px;
+    margin: 0 $size-16;
+  }
+  
+  /* Scrollbar Handle */
+  .template400-ul::-webkit-scrollbar-thumb {
+    background: var(--grey-600); 
+    border-radius: 2px;
+    cursor: pointer;
+  }
+
+  /* Scrollbar Handle on hover */
+  .template400-ul::-webkit-scrollbar-thumb:hover {
+    background: black;
+  }
+
+  .template400-li {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-basis: 75%;
+    flex-shrink: 0;
+    padding: 0 $size-8;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  @media only screen and (min-width: $mobile-large) {
+    .templates-container{
+      max-width: calc($laptop-medium + $size-32);
+    }
+    .template400-ul {
+      padding-bottom: $size-32;
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .template400-li {
+      flex-basis: 25%;
+      padding: 0 $size-16;
     }
   }
 }

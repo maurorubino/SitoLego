@@ -1,0 +1,53 @@
+.navBar {
+  .template100-row1-col2 svg {
+    width: $size-10;
+    height: auto;
+  }
+  .template100-row1-col2 li:first-child svg {
+    transform: rotate(-180deg);
+  }
+
+  .template100-row1-col2 p {
+    text-align: center;
+    line-height: 1.4;
+    a {
+      text-decoration: none;
+      color: var(--lego-blue);
+    }
+  }
+
+  .navBarLogo img {
+    width: $size-40;
+    height: auto;
+  }
+
+  .template100-row2-col2 {
+    a {
+      text-decoration: none;
+      color: black;
+      @include body-100(medium);
+      text-transform: uppercase;
+    }
+    a:hover {
+      text-decoration: underline;
+      color: black;
+    }
+    a.navBarButton {
+      background-color: white;
+      color: var(--red-500);
+      padding: $size-8 $size-16;
+      border-radius: 4px;
+    }
+    a.navBarButton:hover {
+      background-color: black;
+      color: white;
+      text-decoration: none;
+    }
+  }
+
+  @media only screen and (min-width: $mobile-large) {
+    .navBarLogo img {
+      width: $size-56;
+    }
+  }
+}

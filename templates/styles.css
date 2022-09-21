@@ -520,6 +520,7 @@ body {
     justify-content: right;
   }
   .template100-row2 {
+    height: 5rem;
     padding: 0 2rem;
     background-color: var(--lego-yellow);
   }
@@ -531,7 +532,7 @@ body {
     flex-grow: 1;
   }
   .template100-row2-col2 li {
-    padding: 0 2rem;
+    padding: 0 1.5rem;
   }
   .template100-row2-col2 li:first-child {
     padding-left: 3.5rem;
@@ -583,6 +584,16 @@ body {
 
 .template200[data-theme=dark] .template200-content {
   background-color: black;
+  color: white;
+}
+
+.template200[data-theme=purple] .template200-content {
+  background-color: #130e2f;
+  color: white;
+}
+
+.template200[data-theme=blue] .template200-content {
+  background-color: var(--blue-800);
   color: white;
 }
 
@@ -650,7 +661,9 @@ body {
     padding: 0;
   }
   .template200[data-theme=dark] .template200-content,
-.template200[data-theme=light] .template200-content {
+.template200[data-theme=light] .template200-content,
+.template200[data-theme=purple] .template200-content,
+.template200[data-theme=blue] .template200-content {
     background-color: transparent;
   }
   .template200-content h3 {
@@ -751,6 +764,67 @@ body {
   }
   .template300 ul li h6 {
     padding: 0;
+  }
+}
+
+/* =========================================================== Template 400 */
+.template400 {
+  display: flex;
+  flex-direction: column;
+  /* Scrollbar height */
+  /* Scrollbar Track */
+  /* Scrollbar Handle */
+  /* Scrollbar Handle on hover */
+}
+.template400 .template400-ul {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  padding-bottom: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.template400 .template400-ul::-webkit-scrollbar {
+  height: 5px;
+  cursor: pointer;
+}
+.template400 .template400-ul::-webkit-scrollbar-track {
+  background: var(--grey-300);
+  border-radius: 2px;
+  margin: 0 1rem;
+}
+.template400 .template400-ul::-webkit-scrollbar-thumb {
+  background: var(--grey-600);
+  border-radius: 2px;
+  cursor: pointer;
+}
+.template400 .template400-ul::-webkit-scrollbar-thumb:hover {
+  background: black;
+}
+.template400 .template400-li {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex-basis: 75%;
+  flex-shrink: 0;
+  padding: 0 0.5rem;
+}
+.template400 .template400-li img {
+  width: 100%;
+  height: auto;
+}
+@media only screen and (min-width: 425px) {
+  .template400 .templates-container {
+    max-width: calc(1280px + 2rem);
+  }
+  .template400 .template400-ul {
+    padding-bottom: 2rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .template400 .template400-li {
+    flex-basis: 25%;
+    padding: 0 1rem;
   }
 }
 
