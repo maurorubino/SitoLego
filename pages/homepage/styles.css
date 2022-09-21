@@ -410,6 +410,7 @@ body {
   flex-direction: column;
   width: 100%;
   max-width: 1280px;
+  margin: 0 auto;
 }
 
 @media only screen and (min-width: 425px) {
@@ -688,6 +689,67 @@ body {
   }
   .template210 .template200-btnContainer,
 .template210 .template200-btnContainer:first-child {
+    padding: 0;
+  }
+}
+
+/* =========================================================== Template 300 */
+.template300 {
+  display: flex;
+  flex-direction: column;
+}
+.template300 ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0.5rem;
+}
+.template300 ul li {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 25%;
+  padding: 0.5rem;
+  text-align: center;
+}
+.template300 ul li img {
+  width: 100%;
+  height: auto;
+}
+.template300 ul li a {
+  text-decoration: none;
+  color: black;
+}
+.template300 ul li a:hover {
+  text-decoration: underline;
+  color: var(--lego-blue);
+}
+.template300 ul li h6 {
+  font-family: medium;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  font-family: "ceraPro-Medium";
+  padding: 0.5rem 0;
+}
+@media only screen and (min-width: 425px) {
+  .template300 ul {
+    flex-wrap: nowrap;
+    padding: 0;
+  }
+  .template300 ul li {
+    flex-basis: 12.5%;
+    padding: 0;
+    margin: 1rem;
+  }
+  .template300 ul li:first-child {
+    margin-left: 0;
+  }
+  .template300 ul li:last-child {
+    margin-right: 0;
+  }
+  .template300 ul li img {
+    margin-bottom: 1rem;
+  }
+  .template300 ul li h6 {
     padding: 0;
   }
 }/*# sourceMappingURL=styles.css.map */
