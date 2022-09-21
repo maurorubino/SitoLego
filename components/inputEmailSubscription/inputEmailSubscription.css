@@ -57,6 +57,10 @@ table {
   border-spacing: 0;
 }
 
+a {
+  cursor: pointer;
+}
+
 html[data-display=mobile] {
   display: flex;
   flex-direction: column;
@@ -392,6 +396,168 @@ html[data-display=mobile] body {
   font-family: "ceraPro-Black";
   src: url(../../assets/fonts/cera_pro_sv/woff2/CeraPro-Black.woff2);
 }
+body {
+  font-family: "ceraPro-Regular", sans-serif;
+}
+
+[data-skeleton=true] * {
+  border: 1px solid hotpink;
+}
+
+/* =========================================================== Template 100 */
+.template100 {
+  display: flex;
+  flex-direction: column;
+}
+
+.template100-row1 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 3rem;
+  padding: 0 0.5rem;
+  background-color: var(--grey-100);
+}
+
+.template100-row1-col1,
+.template100-row1-col3 {
+  display: none;
+  height: 100%;
+}
+.template100-row1-col1 li,
+.template100-row1-col3 li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.5rem;
+}
+
+.template100-row1-col2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%;
+}
+.template100-row1-col2 li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.5rem;
+}
+.template100-row1-col2 li:nth-child(2) {
+  font-size: 0.75rem;
+}
+
+.template100-row2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  height: 3.5rem;
+  padding: 0 0.5rem;
+  background-color: white;
+  border-bottom: 2px solid var(--lego-yellow);
+}
+
+.template100-row2-col1,
+.template100-row2-col2,
+.template100-row2-col3 {
+  display: flex;
+  flex-direction: row;
+}
+
+.template100-row2-col2 {
+  display: none;
+}
+
+.template100-row2-col1 li,
+.template100-row2-col2 li,
+.template100-row2-col3 li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0.5rem;
+}
+
+@media only screen and (min-width: 425px) {
+  .template100-row1 {
+    flex-direction: row;
+    align-items: center;
+    height: 3.5rem;
+    padding: 0 2rem;
+  }
+  .template100-row1-col1,
+.template100-row1-col3 {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 20%;
+  }
+  .template100-row1-col2 {
+    flex-basis: 60%;
+    justify-content: center;
+  }
+  .template100-row1-col2 li:nth-child(2) {
+    padding: 0 3rem;
+  }
+  .template100-row1-col3 {
+    justify-content: right;
+  }
+  .template100-row2 {
+    padding: 0 2rem;
+    background-color: var(--lego-yellow);
+  }
+  .template100-row2-col1 li:first-child {
+    display: none;
+  }
+  .template100-row2-col2 {
+    display: flex;
+    flex-grow: 1;
+  }
+  .template100-row2-col2 li {
+    padding: 0 2rem;
+  }
+  .template100-row2-col2 li:first-child {
+    padding-left: 3.5rem;
+  }
+  .template100-row2-col3 li {
+    padding: 0 1rem;
+  }
+  .template100-row2-col3 li:last-child {
+    padding-right: 0.5rem;
+  }
+  .template100-row2-col3 li:nth-child(2) {
+    display: none;
+  }
+}
+/* =========================================================== Template 200 */
+.template200 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.template200-content {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.template200-btnGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.template200-btnContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 html[data-display=mobile] body {
   background-color: var(--lego-indigo);
 }
@@ -469,8 +635,16 @@ form.inputEmailSubscription input:focus {
   border: 0;
   outline: 0;
 }
+form.inputEmailSubscription input:not(:-moz-placeholder-shown) ~ h6 {
+  top: 27%;
+  font-size: 12px;
+}
+form.inputEmailSubscription input:not(:-ms-input-placeholder) ~ h6 {
+  top: 27%;
+  font-size: 12px;
+}
 form.inputEmailSubscription input:focus ~ h6,
-form.inputEmailSubscription input:not([value=""]) ~ h6 {
+form.inputEmailSubscription input:not(:placeholder-shown) ~ h6 {
   top: 27%;
   font-size: 12px;
 }

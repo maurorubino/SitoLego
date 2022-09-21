@@ -9,60 +9,69 @@
   <body class="designsystem">
     <aside class="designsystem_aside">
       <header>
-        <h6>Design System</h6>
+        <h6>Design<br>System<br>Lybrary</h6>
       </header>
-      <ol>
+      <ul>
         <li>
-          <a href="#colorsystem">Colors</a>
-          <ul>
+          <a href="#colors">Colors</a>
+          <ol>
             <li>
-              <a href="#colorsystem_brandcolors">Brand colors</a>
+              <a href="#colors-1">Brand colors</a>
             </li>
             <li>
-              <a href="#colorsystem_colorpalettes">Color palettes</a>
+              <a href="#colors-2">Color palettes</a>
             </li>
-          </ul>
+          </ol>
         </li>
         <li>
           <a href="#typography">Typograpghy</a>
+          <ol>
+            <li>
+              <a href="#typography-1">Type system</a>
+            </li>
+          </ol>
         </li>
         <li>
           <a href="#components">Components</a>
-          <ul>
+          <ol>
             <li>
-              <a href="#starRating">Star rating</a>
+              <a href="#components-1">Star rating</a>
             </li>
             <li>
-              <a href="#formFields">Form fields</a>
+              <a href="#components-2">Email field</a>
             </li>
             <li>
-              <a href="#buttonCTA">Button (CTA)</a>
+              <a href="#components-3">Button (ATC)</a>
             </li>
             <li>
-              <a href="#searchBar">Search bar</a>
+              <a href="#components-4">Button (BW)</a>
             </li>
-          </ul>
+            <li>
+              <a href="">Search bar</a>
+            </li>
+          </ol>
         </li>
-      </ol>
+      </ul>
     </aside>
-    <!-- Link Color System -->
-    <hr id="colorsystem">
     <main class="designsystem_main">
-      <div class="designsystem_container">
 
+      <!-- Link -->
+      <hr id="colors">
 
-        
-        <!-- ************************************************************************** Section Colors -->
-        <section class="designsystem_section">
+      <!-- ************************************************************************** Section Colors -->
+      <section class="designsystem_section designsystem_section--colors">
+        <div class="designsystem_container">
           <header class="designsystem_header">
             <h1>Color system</h1>
             <p>Consistent brand colors mean increased brand recognition.</p>
           </header>
-          <!-- Link Brand Colors -->
-          <hr id="colorsystem_brandcolors">
+
+          <!-- Link -->
+          <hr id="colors-1">
+
           <div class="designsystem_content">
             <header class="designsystem_content--header">
-              <h2>Brand colors:</h2>
+              <h2><span>01.</span> Brand colors:</h2>
             </header>
             <section data-flex="column">
               <ul data-flex="row" class="designsystem_content--ul">
@@ -115,12 +124,12 @@
             </section>
           </div><!-- Content -->
 
+          <!-- Link -->
+          <hr id="colors-2">
 
-          <!-- Link Color Palettes -->
-          <hr id="colorsystem_colorpalettes">
           <div class="designsystem_content">
             <header class="designsystem_content--header">
-              <h2>Color palettes:</h2>
+              <h2><span>02.</span> Color palettes:</h2>
             </header>
             <section data-flex="column">
               <ul data-flex="row" class="designsystem_content--ul">
@@ -505,23 +514,28 @@
               </ul>
             </section>
           </div><!-- Content -->
-        </section>
+        </div><!-- Container -->
+      </section>
 
+      <!-- Link -->
+      <hr id="typography">
 
-
-        <!-- Link -->
-        <hr id="typography">
-        <!-- ************************************************************************** Section Typography -->
-        <section class="designsystem_section">
+      <!-- ************************************************************************** Section Typography -->
+      <section class="designsystem_section designsystem_section--typography">
+        <div class="designsystem_container">
           <header class="designsystem_header">
-            <h1>Type system</h1>
-            <p>The type scale is a combination of thirteen styles that are supported by the type system. It contains reusable categories of text, each with an intended application and meaning.</p>
+            <h1>Typograpghy</h1>
+            <p>Consistent brand colors mean increased brand recognition.</p>
           </header>
+
+          <!-- Link -->
+          <hr id="typography-1">
+
           <div class="designsystem_content">
             <header class="designsystem_content--header">
-              <h2>Typography:</h2>
+              <h2><span>01.</span> Type system:</h2>
             </header>
-            <section class="designsystem_typography" data-flex="column">
+            <section data-flex="column">
               <ul data-flex="column" class="designsystem_content--ul">
                 <li data-flex="column" class="designsystem_content--li">
                   <!-- Component goes here -->
@@ -746,25 +760,26 @@
               </ul>
             </section>
           </div><!-- Content -->
-        </section>
+        </div>
+      </section>
 
-        <!-- Link -->
-        <hr id="components">
+      <!-- Link -->
+      <hr id="components">
 
-
-        <!-- ************************************************************************** Section Components -->
-        <section class="designsystem_section">
+      <!-- ************************************************************************** Section Components -->
+      <section class="designsystem_section designsystem_section--components">
+        <div class="designsystem_container">
           <header class="designsystem_header">
             <h1>Components</h1>
             <p>Components are interactive building blocks for creating a user interface.</p>
           </header>
 
           <!-- Link -->
-          <hr id="starRating">
+          <hr id="components-1">
 
           <div class="designsystem_content">
             <header class="designsystem_content--header">
-              <h2>Star rating:</h2>
+              <h2><span>01.</span> Star rating:</h2>
             </header>
             <section data-flex="column">
               <ul data-flex="row" class="designsystem_content--ul" data-highlight="light">
@@ -817,17 +832,11 @@
           </div><!-- Content -->
 
           <!-- Link -->
-          <hr id="formFields">
+          <hr id="components-2">
 
-          <header class="designsystem_header--2">
-            <h1>Form fields</h1>
-            <p>Text fields let users enter and edit text..</p>
-          </header>
-
-          <!-- ************************************************************************** Section Form Elements -->
           <div class="designsystem_content">
             <header class="designsystem_content--header">
-              <h2>Email subscription:</h2>
+              <h2><span>02.</span> Email field:</h2>
             </header>
             <section data-flex="column">
               <ul data-flex="row" class="designsystem_content--ul" data-highlight="dark">
@@ -863,23 +872,23 @@
           </div><!-- Content -->
 
           <!-- Link -->
-          <hr id="buttonCTA">
+          <hr id="components-3">
 
           <div class="designsystem_content">
             <header class="designsystem_content--header">
-              <h2>Button (Call To Action):</h2>
+              <h2><span>03.</span> Button (Add to cart):</h2>
             </header>
             <section data-flex="column">
-              <ul data-flex="column" class="designsystem_content--ul">
+              <ul data-flex="row" class="designsystem_content--ul" data-highlight="light">
                 <li data-flex="column" class="designsystem_content--li">
-                  Component goes here
+                  <button class="button-ag">Aggiungi al Carrello</button>
                 </li>
               </ul>
               <ul data-flex="column" class="designsystem_content--ul">
                 <li data-flex="column" class="designsystem_content--li">
                   <form class="designsystem_form">
                     <label>Code snippet:</label>
-                    <textarea rows="10">Component code</textarea>
+                    <textarea rows="3"><button class="button-ag">Aggiungi al Carrello</button></textarea>
                   </form>
                 </li>
               </ul>
@@ -887,16 +896,42 @@
           </div><!-- Content -->
 
           <!-- Link -->
-          <hr id="searchBar">
+          <hr id="components-4">
 
           <div class="designsystem_content">
             <header class="designsystem_content--header">
-              <h2>Search bar (Top nav):</h2>
+              <h2><span>04.</span> Button (Black / White):</h2>
             </header>
             <section data-flex="column">
+              <ul data-flex="column" class="designsystem_content--ul" data-highlight="light">
+                <li data-flex="column" class="designsystem_content--li">
+                  Work in progress...
+                </li>
+              </ul>
               <ul data-flex="column" class="designsystem_content--ul">
                 <li data-flex="column" class="designsystem_content--li">
-                  Component goes here
+                  <form class="designsystem_form">
+                    <label>Code snippet:</label>
+                    <textarea rows="3">
+
+                    </textarea>
+                  </form>
+                </li>
+              </ul>
+            </section>
+          </div><!-- Content -->
+
+          <!-- Link -->
+          <hr id="link">
+
+          <div class="designsystem_content">
+            <header class="designsystem_content--header">
+              <h2><span>04.</span> Search bar:</h2>
+            </header>
+            <section data-flex="column">
+              <ul data-flex="column" class="designsystem_content--ul" data-highlight="light">
+                <li data-flex="column" class="designsystem_content--li">
+                  Work in progress...
                 </li>
               </ul>
               <ul data-flex="column" class="designsystem_content--ul">
@@ -910,25 +945,29 @@
             </section>
           </div><!-- Content -->
 
-        </section>
+        </div>
+      </section>
 
-
-
-        <!-- ************************************************************************** Section Structure -->
-        <section class="designsystem_section designsystem_structure">
+      <!-- ************************************************************************** Section Structure -->
+      <section class="designsystem_section designsystem_structure">
+        <div class="designsystem_container">
           <header class="designsystem_header">
-            <h1>Section title</h1>
-            <p>Section subtitle.</p>
+            <h1>Components</h1>
+            <p>Components are interactive building blocks for creating a user interface.</p>
           </header>
+
+          <!-- Link -->
+          <hr id="link">
+
           <div class="designsystem_content">
             <header class="designsystem_content--header">
-              <h2>Content title:</h2>
+              <h2><span>01.</span> Content title:</h2>
             </header>
             <section data-flex="column">
-              <ul data-flex="column" class="designsystem_content--ul">
+              <ul data-flex="column" class="designsystem_content--ul" data-highlight="light">
                 <li data-flex="column" data-width="size1" class="designsystem_content--li">
                   <!-- Component goes here -->
-                  <p>Example A: data-flex="column" data-width="size1"</p>
+                  <p>Example A: Component goes here</p>
                 </li><!-- Item -->
               </ul>
               <ul data-flex="row" class="designsystem_content--ul">
@@ -957,11 +996,8 @@
               </ul>
             </section>
           </div><!-- Content -->
-        </section>
-
-
-
-      </div><!-- Container -->
+        </div>
+      </section>
     </main>
   </body>
 </html>
