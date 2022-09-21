@@ -13,7 +13,8 @@
     <p>Responsive Navbar template.</p>
   </header>
 
-  <div class="template100" data-skeleton="false">
+  <!-- ************************************************************************** Template 100 -->
+  <div class="template100" data-skeleton="true">
     <div class="template100-row1">
       <ul class="template100-row1-col1">
         <li>Link</li><!-- Area giochi -->
@@ -50,22 +51,61 @@
 
   <header class="templatesHeader">
     <h2>Template 200: Big Banner</h2>
-    <p>Big banner can take 2 arguments: 1. Left and 2. Right. Banners are used for promotions and the text may vary depending on which side it needs to be displayed.</p>
+    <p>1. data-position="left" to position content to the left.</p>
+    <p>2. data-position="right" to position content to the right.</p>
+    <p>3. data-theme="dark" to get dark theme on mobile.</p>
+    <p>4. data-theme="light" to get light theme on mobile.</p>
   </header>
 
-  <div class="template200" data-skeleton="true">
-    <div class="template200-display">Display</div>
-    <div class="template200-content">
-      <h3>Big banner title</h3>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, ducimus!</p>
-      <ul class="template200-btnGroup">
-        <li class="template200-btnContainer">
-          <button>Button 1</button>
-        </li>
-        <li class="template200-btnContainer">
-          <button>Button 2</button>
-        </li>
-      </ul>
+  <!-- ************************************************************************** Template 200 -->
+  <div class="template200" data-skeleton="true" data-theme="dark" data-position="right">
+    <div class="template200-display">
+      <picture>
+        <source type="image/webp" media="(min-width: 425px)" srcset="../assets/images/placeholder-1800x720.jpg">
+        <img src="../assets/images/placeholder-1080x1080.jpg">
+      </picture>
+    </div>
+    <div class="templates-container">
+      <div class="template200-content">
+        <h3>Big banner title</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, ducimus!</p>
+        <ul class="template200-btnGroup">
+          <li class="template200-btnContainer">
+            <button>Button 1</button>
+          </li>
+          <li class="template200-btnContainer">
+            <button>Button 2</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <header class="templatesHeader">
+    <h2>Template 210: Small Banner</h2>
+    <p>1. data-position="left" to position content to the left.</p>
+    <p>2. data-position="right" to position content to the right.</p>
+    <p>3. data-theme="dark" to get dark theme on mobile.</p>
+    <p>4. data-theme="light" to get light theme on mobile.</p>
+  </header>
+
+  <!-- ************************************************************************** Template 200 -->
+  <div class="template200 template210" data-skeleton="true" data-theme="dark" data-position="right">
+    <div class="template200-display">
+      <picture>
+        <source type="image/webp" media="(min-width: 425px)" srcset="../assets/images/placeholder-1800x300.jpg">
+        <img src="../assets/images/placeholder-1800x720.jpg">
+      </picture>
+    </div>
+    <div class="templates-container">
+      <div class="template200-content">
+        <p>Lorem ipsum dolor sit, amet consectetur.</p>
+        <ul class="template200-btnGroup">
+          <li class="template200-btnContainer">
+            <button>Button 1</button>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </body>
