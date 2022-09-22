@@ -1,0 +1,27 @@
+.buttonATC {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--lego-orange);
+  border: 2px solid var(--lego-orange);
+  box-shadow: none;
+  outline: 0;
+  color: black;
+  border-radius: 4px;
+  @include body-100(medium);
+  line-height: 1;
+  cursor: pointer;
+
+  &:hover {
+    background-color: white;
+  }
+
+  &[data-size=small] {
+    padding: $size-10 $size-16;
+  }
+  &[data-size=large] {
+    padding: $size-16;
+  }
+}
