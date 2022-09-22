@@ -112,6 +112,7 @@
   .bigBanner[data-position=left] [data-container]{
     align-items: flex-start;
     .bigBanner-content {
+      align-items: flex-start;
       text-align: left;
     }
     .bigBanner-btnGroup {
