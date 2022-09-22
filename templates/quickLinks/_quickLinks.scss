@@ -36,6 +36,9 @@
   }
 
   @media only screen and (min-width: $mobile-large) {
+    section[data-container=large] {
+      max-width: $laptop;
+    }
     ul {
       flex-wrap: nowrap;
       padding: 0;
