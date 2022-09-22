@@ -1,7 +1,11 @@
 @import '../main.scss';
+@import '../blocks/buttonPrimary/buttonPrimary.scss';
+@import '../blocks/starRatings/starRatings.scss';
+@import '../blocks/buttonATC/buttonATC.scss';
 @import 'navBar/navBar.scss';
 @import 'bannerBig/bigBanner.scss';
 @import 'bannerSmall/smallBanner.scss';
 @import 'quickLinks/quickLinks.scss';
 @import 'slider/slider.scss';
 @import 'productCard/productCard.scss';
+@import 'articleCard/articleCard.scss';

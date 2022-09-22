@@ -1,0 +1,31 @@
+.articleCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  .articleCard-imgContainer {
+    margin-bottom: $size-16;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  h3 {
+    @include subtitle-100(medium);
+    color: black;
+    margin: $size-8 0;
+  }
+
+  p {
+    @include body-100(regular);
+    color: black;
+    margin: $size-8 0;
+  }
+
+  .buttonPrimary {
+    margin-top: $size-16;
+  }
+
+}
