@@ -118,7 +118,7 @@
   .smallBanner-content p {
     @include headline-600(regular);
     padding: 0;
-    margin-bottom: $size-16;
+    margin-bottom: $size-32;
   }
   .smallBanner-btnGroup {
     flex-direction: row;

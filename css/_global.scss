@@ -39,6 +39,6 @@ html[data-display=mobile] {
   max-width: $laptop-medium;
   margin: 0 auto;
 	@media only screen and (min-width: $mobile-large) {
-		padding: 0 $size-96;
+		padding: 0 $size-32;
 	}
 }

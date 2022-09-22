@@ -16,13 +16,17 @@
       </ul>
       <ul class="navBar-row1-col2">
         <li>
-          <svg viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="Icon__StyledSVG-lm07h6-0 kFGAmn Chevronstyles__ChevronIcon-sc-1qql32m-0 gxjmBc GlobalBannerstyles__ControlIcon-adnc4-6 dzgWcn"><path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path></svg>
+          <svg viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path>
+          </svg>
         </li>
         <li>
           <p>Omaggio con gli acquisti LEGO® superiori a 90 €* <a href="">Compra ora</a></p>
         </li>
         <li>
-          <svg viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="Icon__StyledSVG-lm07h6-0 kFGAmn Chevronstyles__ChevronIcon-sc-1qql32m-0 gxjmBc GlobalBannerstyles__ControlIcon-adnc4-6 dzgWcn"><path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path></svg>
+          <svg viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path>
+          </svg>
         </li>
       </ul>
       <ul class="navBar-row1-col3">
@@ -60,13 +64,13 @@
     </div>
   </nav>
 
-  <section>
+  <section class="promoBanner-100">
     <!-- ************************************************************************** Big Banner -->
     <div class="bigBanner" data-skeleton="false" data-theme="dark" data-position="right">
       <div class="bigBanner-display">
         <picture>
-          <source type="image/webp" media="(min-width: 425px)" srcset="../../assets/images/homepageBanner-Desktop.jpeg">
-          <img src="../../assets/images/homepageBanner-Mobile.jpeg">
+          <source type="image/webp" media="(min-width: 425px)" srcset="https://www.lego.com/cdn/cs/set/assets/bltc61699eaa3418a03/1774-City-Home-202209-Hero-Standard-Medium.jpg?fit=crop&format=jpg&quality=80&width=900&height=351&dpr=5">
+          <img src="https://www.lego.com/cdn/cs/set/assets/bltd5578cc6ce8e3ba1/1774-City-Home-202209-Hero-Standard-Small.jpg?fit=crop&format=jpg&quality=80&width=600&height=600&dpr=1">
         </picture>
       </div>
       <section data-container="large">
@@ -75,10 +79,22 @@
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, ducimus!</p>
           <ul class="bigBanner-btnGroup">
             <li class="bigBanner-btnContainer">
-              <button>Button 1</button>
+              <!-- Component Button Primary -->
+              <a href="" class="buttonPrimary" data-size="large" data-theme="light">
+                <span>Compra ora</span>
+                <svg viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path>
+                </svg>
+              </a>
             </li>
             <li class="bigBanner-btnContainer">
-              <button>Button 2</button>
+              <!-- Component Button Primary -->
+              <a href="" class="buttonPrimary" data-size="large" data-theme="light">
+                <span>Scopri di più</span>
+                <svg viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
@@ -86,7 +102,7 @@
     </div>
   </section>
 
-  <section>
+  <section class="quickLinks-container">
     <!-- ************************************************************************** Quick Links -->
     <div class="quickLinks" data-skeleton="false">
       <section data-container="large">
@@ -144,35 +160,317 @@
     </div>
   </section>
 
-  <section>
+  <section class="consigliatiPerTe">
+    <!-- Section Title -->
+    <header class="sectionTitle">
+      <div data-container="large">
+        <h1>Consigliati per te</h1>
+      </div>
+    </header>
     <!-- ************************************************************************** Slider -->
     <div class="slider" data-slides="four" data-skeleton="false">
       <section data-container="large">
         <ul class="slider-ul">
           <li class="slider-li">
-            <img src="../../assets/images/placeholder-1-1080x1080.jpg">
+            <div class="productCard" data-skeleton="false">
+              <div class="productCard-display">
+                <div class="productCard-wishlist">❤️ Aggiungi alla lista dei desideri</div>
+                <div class="productCard-badges">
+                  <div class="productCard-badge"><span>Novità</span></div>
+                  <div class="productCard-badge"><strong>-40%</strong></div>
+                </div>
+                <a class="productCard-imgContainer" href="">
+                  <img src="https://www.lego.com/cdn/cs/set/assets/bltdcfa4924bc8abd0a/21335.png?fit=bounds&format=png&width=320&height=320&dpr=2" alt="Product image">
+                </a>
+              </div>
+              <div class="productCard-content">
+                <a href="" class="productCard-title">Product title</a>
+                <div class="productCard-ratings">
+                  <!-- Component Star Ratings -->
+                  <div class="starRatings" data-rating="star-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2" viewBox="0 0 250 50">
+                      <g id="Layer_1-2" data-name="Layer 1">
+                        <path class="cls-1" d="M200,0H0V50H250V0h-50ZM39.83,47.83l-14.83-7.8-14.83,7.8,2.83-16.52L1,19.61l16.58-2.41L25,2.17l7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Z"/>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+                <h6 class="productCard-price">$599.99</h6>
+                <div class="productCard-button">
+                  <!-- Component Add to cart button -->
+                  <button class="buttonATC" data-size="large">Aggiungi al Carrello</button>
+                </div>
+              </div>
+            </div><!-- Product Card -->
           </li>
           <li class="slider-li">
-            <img src="../../assets/images/placeholder-2-1080x1080.jpg">
+            <div class="productCard" data-skeleton="false">
+              <div class="productCard-display">
+                <div class="productCard-wishlist">❤️ Aggiungi alla lista dei desideri</div>
+                <div class="productCard-badges">
+                  <div class="productCard-badge"><span>Novità</span></div>
+                </div>
+                <a class="productCard-imgContainer" href="">
+                  <img src="https://www.lego.com/cdn/cs/set/assets/blt05cf4b74ee94dd14/75337.png?fit=bounds&format=png&width=320&height=320&dpr=2" alt="Product image">
+                </a>
+              </div>
+              <div class="productCard-content">
+                <a href="" class="productCard-title">Product title</a>
+                <div class="productCard-ratings">
+                  <!-- Component Star Ratings -->
+                  <div class="starRatings" data-rating="star-4.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2" viewBox="0 0 250 50">
+                      <g id="Layer_1-2" data-name="Layer 1">
+                        <path class="cls-1" d="M200,0H0V50H250V0h-50ZM39.83,47.83l-14.83-7.8-14.83,7.8,2.83-16.52L1,19.61l16.58-2.41L25,2.17l7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Z"/>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+                <h6 class="productCard-price">$599.99</h6>
+                <div class="productCard-button">
+                  <!-- Component Add to cart button -->
+                  <button class="buttonATC" data-size="large">Aggiungi al Carrello</button>
+                </div>
+              </div>
+            </div><!-- Product Card -->
           </li>
           <li class="slider-li">
-            <img src="../../assets/images/placeholder-1080x1080.jpg">
+            <div class="productCard" data-skeleton="false">
+              <div class="productCard-display">
+                <div class="productCard-wishlist">❤️ Aggiungi alla lista dei desideri</div>
+                <div class="productCard-badges">
+                  <div class="productCard-badge"><span>Novità</span></div>
+                </div>
+                <a class="productCard-imgContainer" href="">
+                  <img src="https://www.lego.com/cdn/cs/set/assets/blt0254ea3dce736ea0/10305.png?fit=bounds&format=png&width=320&height=320&dpr=2" alt="Product image">
+                </a>
+              </div>
+              <div class="productCard-content">
+                <a href="" class="productCard-title">Product title</a>
+                <div class="productCard-ratings">
+                  <!-- Component Star Ratings -->
+                  <div class="starRatings" data-rating="star-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2" viewBox="0 0 250 50">
+                      <g id="Layer_1-2" data-name="Layer 1">
+                        <path class="cls-1" d="M200,0H0V50H250V0h-50ZM39.83,47.83l-14.83-7.8-14.83,7.8,2.83-16.52L1,19.61l16.58-2.41L25,2.17l7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Z"/>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+                <h6 class="productCard-price">$599.99</h6>
+                <div class="productCard-button">
+                  <!-- Component Add to cart button -->
+                  <button class="buttonATC" data-size="large">Aggiungi al Carrello</button>
+                </div>
+              </div>
+            </div><!-- Product Card -->
           </li>
           <li class="slider-li">
-            <img src="../../assets/images/placeholder-1-1080x1080.jpg">
+            <div class="productCard" data-skeleton="false">
+              <div class="productCard-display">
+                <div class="productCard-wishlist">❤️ Aggiungi alla lista dei desideri</div>
+                <div class="productCard-badges">
+                  <div class="productCard-badge"><span>Novità</span></div>
+                </div>
+                <a class="productCard-imgContainer" href="">
+                  <img src="https://www.lego.com/cdn/cs/set/assets/blt729f7a96490ebf6f/10304.png?fit=bounds&format=png&width=320&height=320&dpr=2" alt="Product image">
+                </a>
+              </div>
+              <div class="productCard-content">
+                <a href="" class="productCard-title">Product title</a>
+                <div class="productCard-ratings">
+                  <!-- Component Star Ratings -->
+                  <div class="starRatings" data-rating="star-3.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2" viewBox="0 0 250 50">
+                      <g id="Layer_1-2" data-name="Layer 1">
+                        <path class="cls-1" d="M200,0H0V50H250V0h-50ZM39.83,47.83l-14.83-7.8-14.83,7.8,2.83-16.52L1,19.61l16.58-2.41L25,2.17l7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Z"/>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+                <h6 class="productCard-price">$599.99</h6>
+                <div class="productCard-button">
+                  <!-- Component Add to cart button -->
+                  <button class="buttonATC" data-size="large">Aggiungi al Carrello</button>
+                </div>
+              </div>
+            </div><!-- Product Card -->
           </li>
           <li class="slider-li">
-            <img src="../../assets/images/placeholder-2-1080x1080.jpg">
+            <div class="productCard" data-skeleton="false">
+              <div class="productCard-display">
+                <div class="productCard-wishlist">❤️ Aggiungi alla lista dei desideri</div>
+                <div class="productCard-badges">
+                  <div class="productCard-badge"><span>Novità</span></div>
+                  <div class="productCard-badge"><strong>-40%</strong></div>
+                </div>
+                <a class="productCard-imgContainer" href="">
+                  <img src="https://www.lego.com/cdn/cs/set/assets/blt784d1f84d822dfcc/40569.png?fit=bounds&format=png&width=320&height=320&dpr=2" alt="Product image">
+                </a>
+              </div>
+              <div class="productCard-content">
+                <a href="" class="productCard-title">Product title</a>
+                <div class="productCard-ratings">
+                  <!-- Component Star Ratings -->
+                  <div class="starRatings" data-rating="star-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2" viewBox="0 0 250 50">
+                      <g id="Layer_1-2" data-name="Layer 1">
+                        <path class="cls-1" d="M200,0H0V50H250V0h-50ZM39.83,47.83l-14.83-7.8-14.83,7.8,2.83-16.52L1,19.61l16.58-2.41L25,2.17l7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Z"/>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+                <h6 class="productCard-price">$599.99</h6>
+                <div class="productCard-button">
+                  <!-- Component Add to cart button -->
+                  <button class="buttonATC" data-size="large">Aggiungi al Carrello</button>
+                </div>
+              </div>
+            </div><!-- Product Card -->
           </li>
           <li class="slider-li">
-            <img src="../../assets/images/placeholder-1080x1080.jpg">
+            <div class="productCard" data-skeleton="false">
+              <div class="productCard-display">
+                <div class="productCard-wishlist">❤️ Aggiungi alla lista dei desideri</div>
+                <div class="productCard-badges">
+                  <div class="productCard-badge"><span>Novità</span></div>
+                  <div class="productCard-badge"><strong>-40%</strong></div>
+                </div>
+                <a class="productCard-imgContainer" href="">
+                  <img src="https://www.lego.com/cdn/cs/set/assets/blt83f6220f6516afa9/76405.png?fit=bounds&format=png&width=320&height=320&dpr=2" alt="Product image">
+                </a>
+              </div>
+              <div class="productCard-content">
+                <a href="" class="productCard-title">Product title</a>
+                <div class="productCard-ratings">
+                  <!-- Component Star Ratings -->
+                  <div class="starRatings" data-rating="star-2.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2" viewBox="0 0 250 50">
+                      <g id="Layer_1-2" data-name="Layer 1">
+                        <path class="cls-1" d="M200,0H0V50H250V0h-50ZM39.83,47.83l-14.83-7.8-14.83,7.8,2.83-16.52L1,19.61l16.58-2.41L25,2.17l7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Z"/>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+                <h6 class="productCard-price">$599.99</h6>
+                <div class="productCard-button">
+                  <!-- Component Add to cart button -->
+                  <button class="buttonATC" data-size="large">Aggiungi al Carrello</button>
+                </div>
+              </div>
+            </div><!-- Product Card -->
+          </li>
+          <li class="slider-li">
+            <div class="productCard" data-skeleton="false">
+              <div class="productCard-display">
+                <div class="productCard-wishlist">❤️ Aggiungi alla lista dei desideri</div>
+                <div class="productCard-badges">
+                  <div class="productCard-badge"><span>Novità</span></div>
+                </div>
+                <a class="productCard-imgContainer" href="">
+                  <img src="https://www.lego.com/cdn/cs/set/assets/blt5157080434f0c032/76218.png?fit=bounds&format=png&width=320&height=320&dpr=2" alt="Product image">
+                </a>
+              </div>
+              <div class="productCard-content">
+                <a href="" class="productCard-title">Product title</a>
+                <div class="productCard-ratings">
+                  <!-- Component Star Ratings -->
+                  <div class="starRatings" data-rating="star-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2" viewBox="0 0 250 50">
+                      <g id="Layer_1-2" data-name="Layer 1">
+                        <path class="cls-1" d="M200,0H0V50H250V0h-50ZM39.83,47.83l-14.83-7.8-14.83,7.8,2.83-16.52L1,19.61l16.58-2.41L25,2.17l7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Z"/>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+                <h6 class="productCard-price">$599.99</h6>
+                <div class="productCard-button">
+                  <!-- Component Add to cart button -->
+                  <button class="buttonATC" data-size="large">Aggiungi al Carrello</button>
+                </div>
+              </div>
+            </div><!-- Product Card -->
+          </li>
+          <li class="slider-li">
+            <div class="productCard" data-skeleton="false">
+              <div class="productCard-display">
+                <div class="productCard-wishlist">❤️ Aggiungi alla lista dei desideri</div>
+                <div class="productCard-badges">
+                  <div class="productCard-badge"><span>Novità</span></div>
+                  <div class="productCard-badge"><strong>-40%</strong></div>
+                </div>
+                <a class="productCard-imgContainer" href="">
+                  <img src="https://www.lego.com/cdn/cs/set/assets/blt4be686c9aaced5fa/40547.png?fit=bounds&format=png&width=320&height=320&dpr=2" alt="Product image">
+                </a>
+              </div>
+              <div class="productCard-content">
+                <a href="" class="productCard-title">Product title</a>
+                <div class="productCard-ratings">
+                  <!-- Component Star Ratings -->
+                  <div class="starRatings" data-rating="star-1.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2" viewBox="0 0 250 50">
+                      <g id="Layer_1-2" data-name="Layer 1">
+                        <path class="cls-1" d="M200,0H0V50H250V0h-50ZM39.83,47.83l-14.83-7.8-14.83,7.8,2.83-16.52L1,19.61l16.58-2.41L25,2.17l7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Z"/>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+                <h6 class="productCard-price">$599.99</h6>
+                <div class="productCard-button">
+                  <!-- Component Add to cart button -->
+                  <button class="buttonATC" data-size="large">Aggiungi al Carrello</button>
+                </div>
+              </div>
+            </div><!-- Product Card -->
+          </li>
+          <li class="slider-li">
+            <div class="productCard" data-skeleton="false">
+              <div class="productCard-display">
+                <div class="productCard-wishlist">❤️ Aggiungi alla lista dei desideri</div>
+                <div class="productCard-badges">
+                  <div class="productCard-badge"><span>Novità</span></div>
+                  <div class="productCard-badge"><strong>-40%</strong></div>
+                </div>
+                <a class="productCard-imgContainer" href="">
+                  <img src="https://www.lego.com/cdn/cs/set/assets/blt10c72e2ab2785ea4/10306.png?fit=bounds&format=png&width=320&height=320&dpr=2" alt="Product image">
+                </a>
+              </div>
+              <div class="productCard-content">
+                <a href="" class="productCard-title">Product title</a>
+                <div class="productCard-ratings">
+                  <!-- Component Star Ratings -->
+                  <div class="starRatings" data-rating="star-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2" viewBox="0 0 250 50">
+                      <g id="Layer_1-2" data-name="Layer 1">
+                        <path class="cls-1" d="M200,0H0V50H250V0h-50ZM39.83,47.83l-14.83-7.8-14.83,7.8,2.83-16.52L1,19.61l16.58-2.41L25,2.17l7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Z"/>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+                <h6 class="productCard-price">$599.99</h6>
+                <div class="productCard-button">
+                  <!-- Component Add to cart button -->
+                  <button class="buttonATC" data-size="large">Aggiungi al Carrello</button>
+                </div>
+              </div>
+            </div><!-- Product Card -->
           </li>
         </ul>
       </section>
     </div>
   </section>
 
-  <section>
+  <section class="temiDiTendenza">
+    <!-- Section Title -->
+    <header class="sectionTitle">
+      <div data-container="large">
+        <h1>Temi di tendenza</h1>
+      </div>
+    </header>
+    <!-- Inserire template/components qui -->
+  </section>
+
+  <section class="promoBanner-200">
     <!-- ************************************************************************** Small Banner -->
     <div class="smallBanner" data-skeleton="false" data-theme="purple" data-position="left">
       <div class="smallBanner-display">
@@ -186,7 +484,13 @@
           <p>Lorem ipsum dolor sit, amet consectetur.</p>
           <ul class="smallBanner-btnGroup">
             <li class="smallBanner-btnContainer">
-              <button>Button 1</button>
+              <!-- Component Button Primary -->
+              <a href="" class="buttonPrimary" data-size="small" data-theme="light">
+                <span>Scopri di più</span>
+                <svg viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
@@ -194,7 +498,45 @@
     </div>
   </section>
 
-  <section>
+  <section class="decorazioniNatalizie">
+    <!-- Section Title -->
+    <header class="sectionTitle">
+      <div data-container="large">
+        <h1>Decorazioni natalizie</h1>
+      </div>
+    </header>
+    <!-- Inserire template/components qui -->
+  </section>
+
+  <section class="promoBanner-200">
+    <!-- ************************************************************************** Small Banner -->
+    <div class="smallBanner" data-skeleton="false" data-theme="purple" data-position="left">
+      <div class="smallBanner-display">
+        <picture>
+          <source type="image/webp" media="(min-width: 425px)" srcset="https://www.lego.com/cdn/cs/set/assets/blt52b379b6bf169f29/Generic-Site-Wave-1-Exclusive-202208-Hero-Short-Large.jpg?fit=crop&format=webply&quality=80&width=1600&height=200&dpr=3">
+          <img src="https://www.lego.com/cdn/cs/set/assets/bltb2fdd4b9da742c5e/Generic-Site-Wave-1-Exclusive-202208-Hero-Short-Small.jpg?fit=crop&format=jpg&quality=80&width=600&height=264&dpr=1">
+        </picture>
+      </div>
+      <section data-container="large">
+        <div class="smallBanner-content">
+          <p>Lorem ipsum dolor sit, amet consectetur.</p>
+          <ul class="smallBanner-btnGroup">
+            <li class="smallBanner-btnContainer">
+              <!-- Component Button Primary -->
+              <a href="" class="buttonPrimary" data-size="small" data-theme="light">
+                <span>Scopri di più</span>
+                <svg viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <section class="promoBanner-100">
     <!-- ************************************************************************** Big Banner -->
     <div class="bigBanner" data-skeleton="false" data-theme="blue" data-position="left">
       <div class="bigBanner-display">
@@ -209,15 +551,220 @@
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, ducimus!</p>
           <ul class="bigBanner-btnGroup">
             <li class="bigBanner-btnContainer">
-              <button>Button 1</button>
+              <!-- Component Button Primary -->
+              <a href="" class="buttonPrimary" data-size="large" data-theme="light">
+                <span>Compra ora</span>
+                <svg viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path>
+                </svg>
+              </a>
             </li>
             <li class="bigBanner-btnContainer">
-              <button>Button 2</button>
+              <!-- Component Button Primary -->
+              <a href="" class="buttonPrimary" data-size="large" data-theme="light">
+                <span>Scopri di più</span>
+                <svg viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
       </section>
     </div>
+  </section>
+
+  <section class="leggiTutto">
+    <!-- Section Title -->
+    <header class="sectionTitle">
+      <div data-container="large">
+        <h1>Leggi tutto</h1>
+      </div>
+    </header>
+    <!-- Inserire template/components qui -->
+  </section>
+
+  <section class="setInEvidenza">
+    <!-- Section Title -->
+    <header class="sectionTitle">
+      <div data-container="large">
+        <h1>Set in evidenza</h1>
+      </div>
+    </header>
+    <!-- ************************************************************************** Slider -->
+    <div class="slider" data-slides="four" data-skeleton="false">
+      <section data-container="large">
+        <ul class="slider-ul">
+          <li class="slider-li">
+            <div class="productCard" data-skeleton="false">
+              <div class="productCard-display">
+                <div class="productCard-wishlist">❤️ Aggiungi alla lista dei desideri</div>
+                <div class="productCard-badges">
+                  <div class="productCard-badge"><span>Novità</span></div>
+                  <div class="productCard-badge"><strong>-40%</strong></div>
+                </div>
+                <a class="productCard-imgContainer" href="">
+                  <img src="https://www.lego.com/cdn/cs/set/assets/bltdcfa4924bc8abd0a/21335.png?fit=bounds&format=png&width=320&height=320&dpr=2" alt="Product image">
+                </a>
+              </div>
+              <div class="productCard-content">
+                <a href="" class="productCard-title">Product title</a>
+                <div class="productCard-ratings">
+                  <!-- Component Star Ratings -->
+                  <div class="starRatings" data-rating="star-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2" viewBox="0 0 250 50">
+                      <g id="Layer_1-2" data-name="Layer 1">
+                        <path class="cls-1" d="M200,0H0V50H250V0h-50ZM39.83,47.83l-14.83-7.8-14.83,7.8,2.83-16.52L1,19.61l16.58-2.41L25,2.17l7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Z"/>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+                <h6 class="productCard-price">$599.99</h6>
+                <div class="productCard-button">
+                  <!-- Component Add to cart button -->
+                  <button class="buttonATC" data-size="large">Aggiungi al Carrello</button>
+                </div>
+              </div>
+            </div><!-- Product Card -->
+          </li>
+          <li class="slider-li">
+            <div class="productCard" data-skeleton="false">
+              <div class="productCard-display">
+                <div class="productCard-wishlist">❤️ Aggiungi alla lista dei desideri</div>
+                <div class="productCard-badges">
+                  <div class="productCard-badge"><span>Novità</span></div>
+                </div>
+                <a class="productCard-imgContainer" href="">
+                  <img src="https://www.lego.com/cdn/cs/set/assets/blt05cf4b74ee94dd14/75337.png?fit=bounds&format=png&width=320&height=320&dpr=2" alt="Product image">
+                </a>
+              </div>
+              <div class="productCard-content">
+                <a href="" class="productCard-title">Product title</a>
+                <div class="productCard-ratings">
+                  <!-- Component Star Ratings -->
+                  <div class="starRatings" data-rating="star-4.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2" viewBox="0 0 250 50">
+                      <g id="Layer_1-2" data-name="Layer 1">
+                        <path class="cls-1" d="M200,0H0V50H250V0h-50ZM39.83,47.83l-14.83-7.8-14.83,7.8,2.83-16.52L1,19.61l16.58-2.41L25,2.17l7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Z"/>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+                <h6 class="productCard-price">$599.99</h6>
+                <div class="productCard-button">
+                  <!-- Component Add to cart button -->
+                  <button class="buttonATC" data-size="large">Aggiungi al Carrello</button>
+                </div>
+              </div>
+            </div><!-- Product Card -->
+          </li>
+          <li class="slider-li">
+            <div class="productCard" data-skeleton="false">
+              <div class="productCard-display">
+                <div class="productCard-wishlist">❤️ Aggiungi alla lista dei desideri</div>
+                <div class="productCard-badges">
+                  <div class="productCard-badge"><span>Novità</span></div>
+                </div>
+                <a class="productCard-imgContainer" href="">
+                  <img src="https://www.lego.com/cdn/cs/set/assets/blt0254ea3dce736ea0/10305.png?fit=bounds&format=png&width=320&height=320&dpr=2" alt="Product image">
+                </a>
+              </div>
+              <div class="productCard-content">
+                <a href="" class="productCard-title">Product title</a>
+                <div class="productCard-ratings">
+                  <!-- Component Star Ratings -->
+                  <div class="starRatings" data-rating="star-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2" viewBox="0 0 250 50">
+                      <g id="Layer_1-2" data-name="Layer 1">
+                        <path class="cls-1" d="M200,0H0V50H250V0h-50ZM39.83,47.83l-14.83-7.8-14.83,7.8,2.83-16.52L1,19.61l16.58-2.41L25,2.17l7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Z"/>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+                <h6 class="productCard-price">$599.99</h6>
+                <div class="productCard-button">
+                  <!-- Component Add to cart button -->
+                  <button class="buttonATC" data-size="large">Aggiungi al Carrello</button>
+                </div>
+              </div>
+            </div><!-- Product Card -->
+          </li>
+          <li class="slider-li">
+            <div class="productCard" data-skeleton="false">
+              <div class="productCard-display">
+                <div class="productCard-wishlist">❤️ Aggiungi alla lista dei desideri</div>
+                <div class="productCard-badges">
+                  <div class="productCard-badge"><span>Novità</span></div>
+                </div>
+                <a class="productCard-imgContainer" href="">
+                  <img src="https://www.lego.com/cdn/cs/set/assets/blt729f7a96490ebf6f/10304.png?fit=bounds&format=png&width=320&height=320&dpr=2" alt="Product image">
+                </a>
+              </div>
+              <div class="productCard-content">
+                <a href="" class="productCard-title">Product title</a>
+                <div class="productCard-ratings">
+                  <!-- Component Star Ratings -->
+                  <div class="starRatings" data-rating="star-3.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2" viewBox="0 0 250 50">
+                      <g id="Layer_1-2" data-name="Layer 1">
+                        <path class="cls-1" d="M200,0H0V50H250V0h-50ZM39.83,47.83l-14.83-7.8-14.83,7.8,2.83-16.52L1,19.61l16.58-2.41L25,2.17l7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Z"/>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+                <h6 class="productCard-price">$599.99</h6>
+                <div class="productCard-button">
+                  <!-- Component Add to cart button -->
+                  <button class="buttonATC" data-size="large">Aggiungi al Carrello</button>
+                </div>
+              </div>
+            </div><!-- Product Card -->
+          </li>
+          <li class="slider-li">
+            <div class="productCard" data-skeleton="false">
+              <div class="productCard-display">
+                <div class="productCard-wishlist">❤️ Aggiungi alla lista dei desideri</div>
+                <div class="productCard-badges">
+                  <div class="productCard-badge"><span>Novità</span></div>
+                  <div class="productCard-badge"><strong>-40%</strong></div>
+                </div>
+                <a class="productCard-imgContainer" href="">
+                  <img src="https://www.lego.com/cdn/cs/set/assets/blt784d1f84d822dfcc/40569.png?fit=bounds&format=png&width=320&height=320&dpr=2" alt="Product image">
+                </a>
+              </div>
+              <div class="productCard-content">
+                <a href="" class="productCard-title">Product title</a>
+                <div class="productCard-ratings">
+                  <!-- Component Star Ratings -->
+                  <div class="starRatings" data-rating="star-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2" viewBox="0 0 250 50">
+                      <g id="Layer_1-2" data-name="Layer 1">
+                        <path class="cls-1" d="M200,0H0V50H250V0h-50ZM39.83,47.83l-14.83-7.8-14.83,7.8,2.83-16.52L1,19.61l16.58-2.41L25,2.17l7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Z"/>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+                <h6 class="productCard-price">$599.99</h6>
+                <div class="productCard-button">
+                  <!-- Component Add to cart button -->
+                  <button class="buttonATC" data-size="large">Aggiungi al Carrello</button>
+                </div>
+              </div>
+            </div><!-- Product Card -->
+          </li>
+        </ul>
+      </section>
+    </div>
+  </section>
+
+  <section class="footerSection">
+    <!-- Section Title -->
+    <header class="sectionTitle">
+      <div data-container="large">
+        <h1>Footer</h1>
+      </div>
+    </header>
+    <!-- Inserire template/components qui -->
   </section>
 
 </body>

@@ -388,7 +388,7 @@ html[data-display=mobile] body {
 }
 @media only screen and (min-width: 425px) {
   [data-container=large] {
-    padding: 0 6rem;
+    padding: 0 2rem;
   }
 }
 
@@ -591,6 +591,60 @@ body {
     display: none;
   }
 }
+.buttonPrimary {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.buttonPrimary span {
+  font-family: bold;
+  font-size: 1rem;
+  line-height: 1.4;
+  font-family: "ceraPro-Bold";
+  line-height: 1;
+}
+.buttonPrimary svg {
+  width: 0.625rem;
+  height: auto;
+  margin-left: 1rem;
+}
+.buttonPrimary[data-size=small] {
+  padding: 0.625rem 1rem;
+}
+.buttonPrimary[data-size=large] {
+  padding: 1rem;
+}
+.buttonPrimary[data-theme=dark] {
+  background-color: black;
+  color: white;
+}
+.buttonPrimary[data-theme=dark]:hover {
+  background-color: white;
+  color: black;
+}
+.buttonPrimary[data-theme=light] {
+  background-color: white;
+  color: black;
+}
+.buttonPrimary[data-theme=light]:hover {
+  background-color: black;
+  color: white;
+}
+.buttonPrimary[data-theme=none] {
+  padding: 0;
+  background-color: transparent;
+  color: black;
+}
+.buttonPrimary[data-theme=none]:hover {
+  color: black;
+  text-decoration: underline;
+}
+
 .bigBanner {
   position: relative;
   display: flex;
@@ -864,7 +918,7 @@ body {
     line-height: 1;
     font-family: "ceraPro-Regular";
     padding: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
   .smallBanner-btnGroup {
     flex-direction: row;
@@ -978,7 +1032,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  flex-basis: 75%;
+  flex-basis: 85%;
   flex-shrink: 0;
   padding: 0 0.5rem;
 }
@@ -1005,5 +1059,240 @@ body {
   }
   .slider[data-slides=five] .slider-li {
     flex-basis: 20%;
+  }
+}
+.starRatings {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: var(--blue-grey-100);
+}
+.starRatings::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  background-color: var(--lego-yellow);
+  transition: all 1s ease-in-out;
+}
+.starRatings svg {
+  position: relative;
+  fill: white;
+  width: 100%;
+  height: auto;
+  z-index: 2;
+}
+
+[data-rating=star-0]::before {
+  width: 0;
+}
+
+[data-rating="star-0.5"]::before {
+  width: 10%;
+}
+
+[data-rating=star-1]::before {
+  width: 20%;
+}
+
+[data-rating="star-1.5"]::before {
+  width: 30%;
+}
+
+[data-rating=star-2]::before {
+  width: 40%;
+}
+
+[data-rating="star-2.5"]::before {
+  width: 50%;
+}
+
+[data-rating=star-3]::before {
+  width: 60%;
+}
+
+[data-rating="star-3.5"]::before {
+  width: 70%;
+}
+
+[data-rating=star-4]::before {
+  width: 80%;
+}
+
+[data-rating="star-4.5"]::before {
+  width: 90%;
+}
+
+[data-rating=star-5]::before {
+  width: 100%;
+}
+
+.buttonATC {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--lego-orange);
+  border: 2px solid var(--lego-orange);
+  box-shadow: none;
+  outline: 0;
+  color: black;
+  border-radius: 4px;
+  font-family: medium;
+  font-size: 1rem;
+  line-height: 1.4;
+  font-family: "ceraPro-Medium";
+  line-height: 1;
+  cursor: pointer;
+}
+.buttonATC:hover {
+  background-color: white;
+}
+.buttonATC[data-size=small] {
+  padding: 0.625rem 1rem;
+}
+.buttonATC[data-size=large] {
+  padding: 1rem;
+}
+
+.productCard {
+  display: flex;
+  flex-direction: column;
+}
+
+.productCard-display {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  border: 1px solid var(--grey-300);
+  overflow: hidden;
+}
+
+.productCard-wishlist {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.5rem;
+  z-index: 2;
+  font-size: 12px;
+}
+
+.productCard-badges {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+}
+.productCard-badges .productCard-badge {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  padding-right: 0;
+  font-family: medium;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  font-family: "ceraPro-Medium";
+  font-size: 12px;
+}
+.productCard-badges .productCard-badge span, .productCard-badges .productCard-badge strong {
+  padding: 0.5rem;
+}
+.productCard-badges .productCard-badge span {
+  background-color: var(--lego-yellow);
+  color: black;
+  line-height: 1;
+}
+.productCard-badges .productCard-badge strong {
+  background-color: var(--red-500);
+  color: white;
+  line-height: 1;
+}
+
+.productCard-imgContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 2rem;
+  z-index: 1;
+  transition: all 0.5s ease-out;
+}
+.productCard-imgContainer img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.productCard-content {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 0;
+}
+
+.productCard-title {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  align-self: flex-start;
+  padding: 0.5rem 0;
+  color: black;
+  font-family: medium;
+  font-size: 1rem;
+  line-height: 1.4;
+  font-family: "ceraPro-Medium";
+}
+.productCard-title:hover {
+  text-decoration: underline;
+}
+
+.productCard-ratings {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  padding: 0.5rem 0;
+  width: 30%;
+}
+
+.productCard-price {
+  display: flex;
+  flex-direction: column;
+  font-family: bold;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  font-family: "ceraPro-Bold";
+}
+
+.productCard-button {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+@media only screen and (min-width: 425px) {
+  .productCard-imgContainer {
+    padding: 1rem;
+  }
+  .productCard-display:hover .productCard-imgContainer {
+    padding: 0;
   }
 }/*# sourceMappingURL=styles.css.map */

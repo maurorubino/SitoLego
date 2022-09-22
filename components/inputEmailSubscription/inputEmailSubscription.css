@@ -388,7 +388,7 @@ html[data-display=mobile] body {
 }
 @media only screen and (min-width: 425px) {
   [data-container=large] {
-    padding: 0 6rem;
+    padding: 0 2rem;
   }
 }
 

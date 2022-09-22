@@ -4,3 +4,31 @@
 @import '../../templates/bannerSmall/smallBanner.scss';
 @import '../../templates/quickLinks/quickLinks.scss';
 @import '../../templates/slider/slider.scss';
+@import '../../templates/productCard/productCard.scss';
+
+.promoBanner-100 {
+  margin-bottom: $size-64;
+}
+
+.promoBanner-200 {
+  margin-top: $size-96;
+}
+
+header.sectionTitle {
+  padding-top: $size-64;
+  padding-right: $size-16;
+  padding-bottom: $size-32;
+  padding-left: $size-16;
+  h1 {
+    @include headline-600(regular);
+    color: black;
+  }
+
+  @media only screen and (min-width: $mobile-large) {
+    padding-left: 0;
+    padding-right: 0;
+    h1 {
+      @include headline-500(regular);
+    }
+  }
+}

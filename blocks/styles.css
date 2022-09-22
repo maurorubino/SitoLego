@@ -416,14 +416,14 @@ body {
   font-family: "ceraPro-Regular", sans-serif;
 }
 
-.starRating {
+.starRatings {
   position: relative;
   display: flex;
   flex-direction: column;
   width: 100%;
   background-color: var(--blue-grey-100);
 }
-.starRating::before {
+.starRatings::before {
   content: "";
   position: absolute;
   z-index: 1;
@@ -434,7 +434,7 @@ body {
   background-color: var(--lego-yellow);
   transition: all 1s ease-in-out;
 }
-.starRating svg {
+.starRatings svg {
   position: relative;
   fill: white;
   width: 100%;
@@ -484,4 +484,87 @@ body {
 
 [data-rating=star-5]::before {
   width: 100%;
-}/*# sourceMappingURL=starRating.css.map */
+}
+
+.buttonATC {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--lego-orange);
+  border: 2px solid var(--lego-orange);
+  box-shadow: none;
+  outline: 0;
+  color: black;
+  border-radius: 4px;
+  font-family: medium;
+  font-size: 1rem;
+  line-height: 1.4;
+  font-family: "ceraPro-Medium";
+  line-height: 1;
+  cursor: pointer;
+}
+.buttonATC:hover {
+  background-color: white;
+}
+.buttonATC[data-size=small] {
+  padding: 0.625rem 1rem;
+}
+.buttonATC[data-size=large] {
+  padding: 1rem;
+}
+
+.buttonPrimary {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.buttonPrimary span {
+  font-family: bold;
+  font-size: 1rem;
+  line-height: 1.4;
+  font-family: "ceraPro-Bold";
+  line-height: 1;
+}
+.buttonPrimary svg {
+  width: 0.625rem;
+  height: auto;
+  margin-left: 1rem;
+}
+.buttonPrimary[data-size=small] {
+  padding: 0.625rem 1rem;
+}
+.buttonPrimary[data-size=large] {
+  padding: 1rem;
+}
+.buttonPrimary[data-theme=dark] {
+  background-color: black;
+  color: white;
+}
+.buttonPrimary[data-theme=dark]:hover {
+  background-color: white;
+  color: black;
+}
+.buttonPrimary[data-theme=light] {
+  background-color: white;
+  color: black;
+}
+.buttonPrimary[data-theme=light]:hover {
+  background-color: black;
+  color: white;
+}
+.buttonPrimary[data-theme=none] {
+  padding: 0;
+  background-color: transparent;
+  color: black;
+}
+.buttonPrimary[data-theme=none]:hover {
+  color: black;
+  text-decoration: underline;
+}/*# sourceMappingURL=styles.css.map */
