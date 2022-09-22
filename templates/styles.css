@@ -667,12 +667,22 @@ body {
   width: 100%;
   height: auto;
 }
+.bigBanner-display .imageBrand {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  height: 3.5rem;
+  width: auto;
+}
 
 .bigBanner-content {
   display: flex;
   flex-direction: column;
   text-align: center;
   padding: 2rem;
+}
+.bigBanner-content img {
+  display: none;
 }
 
 .bigBanner[data-theme=light] .bigBanner-content {
@@ -736,10 +746,14 @@ body {
     display: flex;
     flex-direction: column;
   }
+  .imageBrand {
+    display: none;
+  }
   .bigBanner[data-position=right] [data-container] {
     align-items: flex-end;
   }
   .bigBanner[data-position=right] [data-container] .bigBanner-content {
+    align-items: flex-end;
     text-align: right;
   }
   .bigBanner[data-position=right] [data-container] .bigBanner-btnGroup {
@@ -763,6 +777,11 @@ body {
 .bigBanner[data-theme=purple] .bigBanner-content,
 .bigBanner[data-theme=blue] .bigBanner-content {
     background-color: transparent;
+  }
+  .bigBanner-content img {
+    display: flex;
+    width: auto;
+    height: 3.5rem;
   }
   .bigBanner-content h3 {
     font-family: regular;

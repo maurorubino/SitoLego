@@ -21,6 +21,13 @@
       height: auto;
     }
   }
+  .imageBrand {
+    position: absolute;
+    bottom: $size-16;
+    right: $size-16;
+    height: $size-56;
+    width: auto;
+  }
 }
 
 .bigBanner-content {
@@ -28,6 +35,10 @@
   flex-direction: column;
   text-align: center;
   padding: $size-32;
+
+  img {
+    display: none;
+  }
 }
 
 .bigBanner[data-theme=light] .bigBanner-content{
@@ -85,9 +96,13 @@
     display: flex;
     flex-direction: column;
   }
+  .imageBrand {
+    display: none;
+  }
   .bigBanner[data-position=right] [data-container] {
     align-items: flex-end;
     .bigBanner-content {
+      align-items: flex-end;
       text-align: right;
     }
     .bigBanner-btnGroup {
@@ -112,6 +127,11 @@
   .bigBanner[data-theme=purple] .bigBanner-content,
   .bigBanner[data-theme=blue] .bigBanner-content {
     background-color: transparent;
+  }
+  .bigBanner-content img {
+    display: flex;
+    width: auto;
+    height: $size-56;
   }
   .bigBanner-content h3 {
     @include headline-400(regular);
