@@ -2,6 +2,8 @@
 @import '../../components/colorSwatch/colorSwatch.scss';
 @import '../../components/starRating/starRating.scss';
 @import '../../components/inputEmailSubscription/inputEmailSubscription.scss';
+@import '../../components/button-aggiungi al carrello/button-ag.scss';
+@import '../../components/Bottone\ W-B/bottonewb-style.scss';
 
 $aside-width-size: 20%;
 
@@ -109,7 +111,7 @@ body.designsystem {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-left: 1px solid black;
+  border-left: 2px solid black;
   padding: $size-48 0;
 }
 

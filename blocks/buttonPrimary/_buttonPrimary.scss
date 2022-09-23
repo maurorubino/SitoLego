@@ -1,0 +1,56 @@
+.buttonPrimary {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+
+  span {
+    @include body-100(bold);
+    line-height: 1;
+  }
+
+  svg {
+    width: $size-10;
+    height: auto;
+    margin-left: $size-16;
+  }
+
+  &[data-size=small] {
+    padding: $size-10 $size-16;
+  }
+  &[data-size=large] {
+    padding: $size-16;
+  }
+
+  &[data-theme=dark] {
+    background-color: black;
+    color: white;
+    &:hover {
+      background-color: white;
+      color: black;
+    }
+  }
+
+  &[data-theme=light] {
+    background-color: white;
+    color: black;
+    &:hover {
+      background-color: black;
+      color: white;
+    }
+  }
+
+  &[data-theme=none] {
+    padding: 0;
+    background-color: transparent;
+    color: black;
+    &:hover {
+      color: black;
+      text-decoration: underline;
+    }
+  }
+}
