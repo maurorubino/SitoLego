@@ -4,8 +4,8 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: var(--lego-orange);
-  border: 2px solid var(--lego-orange);
+  border-width: 2px;
+  border-style: solid;
   box-shadow: none;
   outline: 0;
   color: black;
@@ -13,15 +13,24 @@
   @include body-100(medium);
   line-height: 1;
   cursor: pointer;
-
+  &[data-theme=orange] {
+    background-color: var(--lego-orange);
+    border-color: var(--lego-orange);
+    color: black;
+  }
+  &[data-theme=red] {
+    background-color: var(--lego-red);
+    border-color: var(--lego-red);
+    color: white;
+  }
   &:hover {
     background-color: white;
+    color: black;
   }
-
   &[data-size=small] {
     padding: $size-10 $size-16;
   }
   &[data-size=large] {
-    padding: $size-16;
+    padding: $size-20;
   }
 }
