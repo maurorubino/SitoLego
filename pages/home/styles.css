@@ -901,8 +901,11 @@ body {
     flex-direction: row;
     padding: 1rem 0;
   }
-  .bigBanner-btnGroup li:first-child {
+  .bigBanner[data-position=left] .bigBanner-btnGroup li:first-child {
     padding-right: 1rem;
+  }
+  .bigBanner[data-position=right] .bigBanner-btnGroup li:last-child {
+    padding-left: 1rem;
   }
 }
 .smallBanner {
