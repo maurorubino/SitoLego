@@ -492,8 +492,8 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: var(--lego-orange);
-  border: 2px solid var(--lego-orange);
+  border-width: 2px;
+  border-style: solid;
   box-shadow: none;
   outline: 0;
   color: black;
@@ -505,14 +505,25 @@ body {
   line-height: 1;
   cursor: pointer;
 }
+.buttonATC[data-theme=orange] {
+  background-color: var(--lego-orange);
+  border-color: var(--lego-orange);
+  color: black;
+}
+.buttonATC[data-theme=red] {
+  background-color: var(--lego-red);
+  border-color: var(--lego-red);
+  color: white;
+}
 .buttonATC:hover {
   background-color: white;
+  color: black;
 }
 .buttonATC[data-size=small] {
   padding: 0.625rem 1rem;
 }
 .buttonATC[data-size=large] {
-  padding: 1rem;
+  padding: 1.25rem;
 }
 
 .buttonPrimary {
