@@ -143,9 +143,11 @@
   .bigBanner-btnGroup {
     flex-direction: row;
     padding: $size-16 0;
-
-    li:first-child {
-      padding-right: $size-16;
-    }
+  }
+  .bigBanner[data-position=left] .bigBanner-btnGroup li:first-child {
+    padding-right: $size-16;
+  }
+  .bigBanner[data-position=right] .bigBanner-btnGroup li:last-child {
+    padding-left: $size-16;
   }
 }
