@@ -1186,6 +1186,7 @@ body {
 .productCard {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
 }
 
 .productCard-display {
@@ -1270,7 +1271,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 0.5rem 0;
-  min-height: 198px;
+  flex-grow: 1;
 }
 
 .productCard-title {
