@@ -17,6 +17,10 @@ details.addToWishlist {
   padding: $size-8;
 }
 
+details.addToWishlist * {
+  user-select: none;
+}
+
 details.addToWishlist summary {
   display: flex;
   flex-direction: row;
