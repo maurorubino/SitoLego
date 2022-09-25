@@ -626,6 +626,13 @@ details.addToWishlist {
   padding: 0.5rem;
 }
 
+details.addToWishlist * {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
 details.addToWishlist summary {
   display: flex;
   flex-direction: row;
