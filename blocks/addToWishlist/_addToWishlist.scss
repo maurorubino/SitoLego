@@ -12,10 +12,8 @@ details.addToWishlist {
   position: absolute;
   z-index: 10;
   top: $size-8;
-  // right: $size-8;
   left: $size-8;
   background-color: transparent;
-  // border-radius: $size-16;
   padding: $size-8;
 }
 
@@ -98,7 +96,7 @@ details.addToWishlist form ul li {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: $size-8 0;
+  padding: $size-16 0;
 }
 
 details.addToWishlist form ul li input {
@@ -165,18 +163,63 @@ details.addToWishlist[open] {
     }
   }
   form ul li{
-    padding: $size-16 0;
+    // padding: $size-16 0;
   }
 }
 
 // ------------------------------------------------------- Responsive
 @media only screen and (min-width: $mobile-large) {
-  details.addToWishlist summary {
-    &:hover {
-      p {
-        text-decoration: underline;
-      }
-    }
+  details.addToWishlist {
+    right: $size-8;
+    overflow-y: scroll;
+  }
+  details.addToWishlist[open] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: $size-16;
+    background-color: rgba(255,255,255,0.25); 
+    backdrop-filter: blur(25px);
+    background-blend-mode: overlay;
+    box-shadow: none;
+  }
+  details.addToWishlist[open] summary {
+    height: auto;
+  }
+  details.addToWishlist[open] summary svg.heart rect {
+    fill: transparent;
+  }
+  details.addToWishlist[open] summary svg.cross {
+    display: none;
+  }
+  details.addToWishlist summary svg.arrow {
+    display: flex;
+  }
+  details.addToWishlist summary p,
+  details.addToWishlist[open] summary p {
+    display: inline;
+    font-size: $size-12;
+  }
+  details.addToWishlist summary:hover p {
+    text-decoration: underline;
+  }
+  details.addToWishlist[open] ~ .addToWishlistOverlay {
+    display: none;
+  }
+  details.addToWishlist form ul li {
+    padding: $size-14 0;
+  }
+  details.addToWishlist form ul li a {
+    @include body-200(regular);
+  }
+  
+  details.addToWishlist a.createNewWishlist {
+    padding: $size-8;
+    // padding-top: $size-16;
+    text-align: left;
+    @include body-200(regular);
   }
 }
 
