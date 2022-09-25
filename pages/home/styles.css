@@ -1467,6 +1467,14 @@ details.addToWishlist > summary::-webkit-details-marker {
     flex-basis: 33.33%;
   }
   .slider[data-slides=four] .slider-li {
+    flex-basis: 33.33%;
+  }
+  .slider[data-slides=five] .slider-li {
+    flex-basis: 25%;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .slider[data-slides=four] .slider-li {
     flex-basis: 25%;
   }
   .slider[data-slides=five] .slider-li {
