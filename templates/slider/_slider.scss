@@ -67,6 +67,16 @@
   }
 
   .slider[data-slides=four] .slider-li{
+    flex-basis: 33.33%;
+  }
+
+  .slider[data-slides=five] .slider-li{
+    flex-basis: 25%;
+  }
+}
+
+@media only screen and (min-width: $laptop-medium) {
+  .slider[data-slides=four] .slider-li{
     flex-basis: 25%;
   }
 
