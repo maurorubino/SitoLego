@@ -80,10 +80,14 @@
 
   &[data-template=button3] {
     border-radius: 100px;
+    padding-left: $size-24;
+    padding-right: $size-24;
   }
 
   &[data-template=button4] {
     border-radius: 100px;
+    padding-left: $size-24;
+    padding-right: $size-24;
     &[data-theme=dark] {
       background-color: transparent;
       color: black;

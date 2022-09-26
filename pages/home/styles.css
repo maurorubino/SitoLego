@@ -492,9 +492,13 @@ body {
 }
 .buttonPrimary[data-template=button3] {
   border-radius: 100px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 .buttonPrimary[data-template=button4] {
   border-radius: 100px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 .buttonPrimary[data-template=button4][data-theme=dark] {
   background-color: transparent;
