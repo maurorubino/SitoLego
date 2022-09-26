@@ -516,7 +516,7 @@ body {
   color: white;
 }
 .buttonATC:hover {
-  background-color: white;
+  background-color: transparent;
   color: black;
 }
 .buttonATC[data-size=small] {
@@ -526,13 +526,17 @@ body {
   padding: 1.25rem;
 }
 
+body {
+  padding: 3rem;
+  background-color: antiquewhite;
+}
+
 .buttonPrimary {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   text-align: center;
-  border-radius: 4px;
   cursor: pointer;
   text-decoration: none;
 }
@@ -571,12 +575,56 @@ body {
   color: white;
 }
 .buttonPrimary[data-theme=none] {
-  padding: 0;
   background-color: transparent;
   color: black;
+  padding: 0;
 }
 .buttonPrimary[data-theme=none]:hover {
   color: black;
+  text-decoration: underline;
+}
+.buttonPrimary[data-template=button1] {
+  border-radius: 4px;
+}
+.buttonPrimary[data-template=button2] {
+  border-radius: 4px;
+}
+.buttonPrimary[data-template=button2][data-theme=dark] {
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+}
+.buttonPrimary[data-template=button2][data-theme=dark]:hover {
+  text-decoration: underline;
+}
+.buttonPrimary[data-template=button2][data-theme=light] {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+.buttonPrimary[data-template=button2][data-theme=light]:hover {
+  text-decoration: underline;
+}
+.buttonPrimary[data-template=button3] {
+  border-radius: 100px;
+}
+.buttonPrimary[data-template=button4] {
+  border-radius: 100px;
+}
+.buttonPrimary[data-template=button4][data-theme=dark] {
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+}
+.buttonPrimary[data-template=button4][data-theme=dark]:hover {
+  text-decoration: underline;
+}
+.buttonPrimary[data-template=button4][data-theme=light] {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+.buttonPrimary[data-template=button4][data-theme=light]:hover {
   text-decoration: underline;
 }
 

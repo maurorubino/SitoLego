@@ -1,10 +1,15 @@
+body {
+  padding: $size-48;
+  background-color: antiquewhite;
+}
+
 .buttonPrimary {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   text-align: center;
-  border-radius: 4px;
+  
   cursor: pointer;
   text-decoration: none;
 
@@ -45,12 +50,60 @@
   }
 
   &[data-theme=none] {
-    padding: 0;
     background-color: transparent;
     color: black;
+    padding: 0;
     &:hover {
       color: black;
       text-decoration: underline;
+    }
+  }
+
+  &[data-template=button1] {
+    border-radius: 4px;
+  }
+
+  &[data-template=button2] {
+    border-radius: 4px;
+    &[data-theme=dark] {
+      background-color: transparent;
+      color: black;
+      border: 1px solid black;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    &[data-theme=light] {
+      background-color: transparent;
+      color: white;
+      border: 1px solid white;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &[data-template=button3] {
+    border-radius: 100px;
+  }
+
+  &[data-template=button4] {
+    border-radius: 100px;
+    &[data-theme=dark] {
+      background-color: transparent;
+      color: black;
+      border: 1px solid black;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    &[data-theme=light] {
+      background-color: transparent;
+      color: white;
+      border: 1px solid white;
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 }
