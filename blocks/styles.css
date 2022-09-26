@@ -526,11 +526,6 @@ body {
   padding: 1.25rem;
 }
 
-body {
-  padding: 3rem;
-  background-color: antiquewhite;
-}
-
 .buttonPrimary {
   display: flex;
   flex-direction: row;

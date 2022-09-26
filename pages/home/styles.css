@@ -416,11 +416,6 @@ body {
   font-family: "ceraPro-Regular", sans-serif;
 }
 
-body {
-  padding: 3rem;
-  background-color: antiquewhite;
-}
-
 .buttonPrimary {
   display: flex;
   flex-direction: row;
