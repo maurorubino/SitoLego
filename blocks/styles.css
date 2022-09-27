@@ -901,4 +901,59 @@ details.addToWishlist > summary {
 }
 details.addToWishlist > summary::-webkit-details-marker {
   display: none;
+}
+
+.pageHeader {
+  display: flex;
+  flex-direction: column;
+  padding-top: 4rem;
+  padding-right: 1rem;
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+}
+.pageHeader[data-position=left] [data-container] {
+  align-items: flex-start;
+  text-align: left;
+}
+.pageHeader[data-position=center] [data-container] {
+  align-items: center;
+  text-align: center;
+}
+.pageHeader[data-position=right] [data-container] {
+  align-items: flex-end;
+  text-align: right;
+}
+.pageHeader h1 {
+  font-family: regular;
+  font-size: 1.5rem;
+  line-height: 1;
+  font-family: "ceraPro-Regular";
+  color: black;
+}
+@media only screen and (min-width: 425px) {
+  .pageHeader {
+    padding-top: 6rem;
+    padding-right: 0;
+    padding-bottom: 3rem;
+    padding-left: 0;
+  }
+  .pageHeader[data-position=left] [data-container], .pageHeader[data-position=right] [data-container], .pageHeader[data-position=center] [data-container] {
+    flex-direction: row;
+    align-items: center;
+  }
+  .pageHeader[data-position=left] [data-container] {
+    justify-content: left;
+  }
+  .pageHeader[data-position=right] [data-container] {
+    justify-content: right;
+  }
+  .pageHeader[data-position=center] [data-container] {
+    justify-content: center;
+  }
+  .pageHeader h1 {
+    font-family: regular;
+    font-size: 2rem;
+    line-height: 1;
+    font-family: "ceraPro-Regular";
+  }
 }/*# sourceMappingURL=styles.css.map */
