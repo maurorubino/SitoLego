@@ -1582,6 +1582,9 @@ details.addToWishlist > summary::-webkit-details-marker {
   .slider[data-slides=five] .slider-li {
     flex-basis: 20%;
   }
+  .slider[data-slider=disabled-desktop] .slider-ul {
+    overflow-x: initial;
+  }
 }
 .productCard {
   display: flex;
