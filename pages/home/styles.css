@@ -1079,7 +1079,7 @@ details.addToWishlist > summary::-webkit-details-marker {
   padding: 0 0.5rem;
 }
 
-@media only screen and (min-width: 425px) {
+@media only screen and (min-width: 1024px) {
   .navBar-row1 {
     flex-direction: row;
     align-items: center;
@@ -1479,6 +1479,22 @@ details.addToWishlist > summary::-webkit-details-marker {
   padding: 0.5rem 0;
 }
 @media only screen and (min-width: 425px) {
+  .quickLinks ul {
+    justify-content: center;
+  }
+  .quickLinks ul li {
+    flex-basis: 20%;
+    width: 20%;
+    padding: 0.5rem 1rem;
+  }
+  .quickLinks ul li img {
+    margin-bottom: 1rem;
+  }
+  .quickLinks ul li h6 {
+    padding: 0;
+  }
+}
+@media only screen and (min-width: 768px) {
   .quickLinks section[data-container=large] {
     max-width: 1024px;
   }
@@ -1488,20 +1504,15 @@ details.addToWishlist > summary::-webkit-details-marker {
   }
   .quickLinks ul li {
     flex-basis: 12.5%;
-    padding: 0;
+    width: auto;
     margin: 1rem;
+    padding: 0;
   }
   .quickLinks ul li:first-child {
     margin-left: 0;
   }
   .quickLinks ul li:last-child {
     margin-right: 0;
-  }
-  .quickLinks ul li img {
-    margin-bottom: 1rem;
-  }
-  .quickLinks ul li h6 {
-    padding: 0;
   }
 }
 
@@ -1568,16 +1579,27 @@ details.addToWishlist > summary::-webkit-details-marker {
     padding: 0 1rem;
   }
   .slider[data-slides=three] .slider-li {
+    flex-basis: 50%;
+  }
+  .slider[data-slides=four] .slider-li {
+    flex-basis: 50%;
+  }
+  .slider[data-slides=five] .slider-li {
+    flex-basis: 50%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .slider[data-slides=three] .slider-li {
     flex-basis: 33.33%;
   }
   .slider[data-slides=four] .slider-li {
     flex-basis: 33.33%;
   }
   .slider[data-slides=five] .slider-li {
-    flex-basis: 25%;
+    flex-basis: 33.33%;
   }
 }
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1024px) {
   .slider[data-slides=four] .slider-li {
     flex-basis: 25%;
   }
