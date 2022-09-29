@@ -1292,6 +1292,11 @@ details.addToWishlist > summary::-webkit-details-marker {
   color: white;
 }
 
+.smallBanner[data-theme=orange] .smallBanner-content {
+  background-color: var(--orange-500);
+  color: black;
+}
+
 .smallBanner-content h3,
 .smallBanner-content p {
   padding: 0.5rem 0;
@@ -1355,10 +1360,7 @@ details.addToWishlist > summary::-webkit-details-marker {
     width: 50%;
     padding: 0;
   }
-  .smallBanner[data-theme=dark] .smallBanner-content,
-.smallBanner[data-theme=light] .smallBanner-content,
-.smallBanner[data-theme=purple] .smallBanner-content,
-.smallBanner[data-theme=blue] .smallBanner-content {
+  .smallBanner[data-theme] .smallBanner-content {
     background-color: transparent;
   }
   .smallBanner-content h3 {
