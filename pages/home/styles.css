@@ -1754,11 +1754,35 @@ details.addToWishlist > summary::-webkit-details-marker {
   text-align: center;
 }
 .articleCard .articleCard-imgContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
   margin-bottom: 1rem;
 }
-.articleCard .articleCard-imgContainer img {
+.articleCard .articleCard-imgContainer .articleCard-img {
   width: 100%;
   height: auto;
+}
+.articleCard[data-position=left] .articleCard-imgContainer {
+  align-items: flex-start;
+}
+.articleCard[data-position=right] .articleCard-imgContainer {
+  align-items: flex-end;
+}
+.articleCard .articleCard-logoContainer {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 25%;
+  z-index: 1;
+  padding: 0.5rem;
+}
+.articleCard .articleCard-logoContainer img {
+  max-width: 100px;
+  max-height: 100%;
 }
 .articleCard h3 {
   font-family: medium;
@@ -1780,6 +1804,11 @@ details.addToWishlist > summary::-webkit-details-marker {
   margin-top: 1rem;
 }
 
+@media only screen and (min-width: 768px) {
+  .articleCard .articleCard-logoContainer {
+    height: 25%;
+  }
+}
 .footer {
   display: flex;
   flex-direction: column;
