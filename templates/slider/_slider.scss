@@ -63,6 +63,20 @@
   }
 
   .slider[data-slides=three] .slider-li{
+    flex-basis: 50%;
+  }
+
+  .slider[data-slides=four] .slider-li{
+    flex-basis: 50%;
+  }
+
+  .slider[data-slides=five] .slider-li{
+    flex-basis: 50%;
+  }
+}
+
+@media only screen and (min-width: $tablet) {
+  .slider[data-slides=three] .slider-li{
     flex-basis: 33.33%;
   }
 
@@ -71,11 +85,11 @@
   }
 
   .slider[data-slides=five] .slider-li{
-    flex-basis: 25%;
+    flex-basis: 33.33%;
   }
 }
 
-@media only screen and (min-width: $laptop-medium) {
+@media only screen and (min-width: $laptop) {
   .slider[data-slides=four] .slider-li{
     flex-basis: 25%;
   }
