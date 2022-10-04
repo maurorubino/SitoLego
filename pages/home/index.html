@@ -67,45 +67,34 @@
   </nav>
 
   <section class="promoBanner-100">
-    <!-- ************************************************************************** Big Banner -->
-    <div class="bigBanner" data-skeleton="false" data-theme="dark" data-position="right">
-      <div class="bigBanner-display">
-        <picture>
-          <source type="image/webp" media="(min-width: 425px)"
-            srcset="https://www.lego.com/cdn/cs/set/assets/bltc61699eaa3418a03/1774-City-Home-202209-Hero-Standard-Medium.jpg?fit=crop&format=jpg&quality=80&width=900&height=351&dpr=5">
-          <img
-            src="https://www.lego.com/cdn/cs/set/assets/bltd5578cc6ce8e3ba1/1774-City-Home-202209-Hero-Standard-Small.jpg?fit=crop&format=jpg&quality=80&width=600&height=600&dpr=1">
+    <!-- ************************************************************************** Banner -->
+    <div class="banner" data-size="large" data-theme="dark" data-position="left" data-skeleton="false">
+      <section class="bannerMedia">
+        <picture class="bannerPicture">
+          <source class="bannerPicture-source" type="image/webp" media="(min-width: 425px)" srcset="https://www.lego.com/cdn/cs/set/assets/bltd44334316ded064e/75331-Exclusive-202210-VIP-Hero-Standard-Large.jpg?fit=crop&format=jpg&quality=80&width=1600&height=500&dpr=2">
+          <img class="bannerPicture-img" src="https://www.lego.com/cdn/cs/set/assets/blt8a95702fdb4260d8/75331-Exclusive-202210-VIP-Hero-Standard-Small.jpg?fit=crop&format=jpg&quality=80&width=600&height=600&dpr=2">
         </picture>
-        <img class="imageBrand" src="../../assets/images/logo.svg" alt="Brand image">
-      </div>
-      <section data-container="large">
-        <div class="bigBanner-content">
-          <img src="../../assets/images/logo.svg" alt="Brand image">
-          <h3>Big banner title</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, ducimus!</p>
-          <ul class="bigBanner-btnGroup">
-            <li class="bigBanner-btnContainer">
+        <img class="bannerMedia-mark" src="https://www.lego.com/cdn/cs/set/assets/bltfb987f8b1414454f/starWars_logo_black_stroke_300w.png?format=png&height=60&dpr=2" alt="Brand image">
+      </section>
+      <div data-container="large">
+        <section class="bannerContent">
+          <!-- <img src="https://www.lego.com/cdn/cs/set/assets/bltfb987f8b1414454f/starWars_logo_black_stroke_300w.png?format=png&height=60&dpr=2" alt="Logo image"> -->
+          <h3>L'accesso in anteprima VIP inizia il 3/10</h3>
+          <p>Non lasciarti sfuggire Razor Crest™, il nuovo set Ultimate Collector Series.</p>
+          <ul class="banner-btnGroup">
+            <li class="banner-btnContainer">
               <!-- Component Button Primary -->
-              <a href="" class="buttonPrimary" data-template="button1" data-size="large" data-theme="light">
-                <span>Compra ora</span>
-                <svg viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path>
-                </svg>
-              </a>
-            </li>
-            <li class="bigBanner-btnContainer">
-              <!-- Component Button Primary -->
-              <a href="" class="buttonPrimary" data-template="button1" data-size="large" data-theme="light">
-                <span>Scopri di più</span>
+              <a href="" class="buttonPrimary" data-size="large" data-theme="light" data-template="button1">
+                <span>Registrazione</span>
                 <svg viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
                   <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path>
                 </svg>
               </a>
             </li>
           </ul>
-        </div>
-      </section>
-    </div>
+        </section>
+      </div>
+    </div><!-- Banner -->
   </section>
 
   <section class="quickLinks-container">
@@ -1174,164 +1163,34 @@
     </div>
   </section>
 
-  <section class="temiDiTendenza">
-    <!-- Component Page Header -->
-    <header class="pageHeader" data-position="left">
-      <div data-container="large">
-        <h1>Temi di tendenza</h1>
-      </div>
-    </header>
-    <!-- ************************************************************************** Slider -->
-    <div class="slider" data-slides="four" data-skeleton="false">
-      <section data-container="large">
-        <ul class="slider-ul">
-          <li class="slider-li">
-            <!-- ========================================================== Article Card-->
-            <div class="articleCard" data-position="right">
-              <a class="articleCard-imgContainer" href="">
-                <img class="articleCard-img"
-                  src="https://www.lego.com/cdn/cs/set/assets/blt95087b1ff9069b85/HarryPotter-T1-202108-KV-Block-Standard.jpg?fit=crop&format=jpg&quality=80&width=635&height=440&dpr=3">
-                <div class="articleCard-logoContainer">
-                  <img
-                    src="https://www.lego.com/cdn/cs/set/assets/bltc87b4d0a757a6632/harryPotter_logo_gold_neg_100h.png?format=png&height=60&dpr=2">
-                  <img
-                    src="https://www.lego.com/cdn/cs/set/assets/blt4fb1c3a4e8917247/wizardingWorld_logo_gold_300w.png?format=png&height=60&dpr=2"
-                    alt="">
-                </div>
-              </a>
-              <h3>Lancia un incantesimo per il divertimento</h3>
-              <p>Entusiasmanti magie ti attendono con LEGO® Harry Potter™.</p>
-              <!-- Component Button Primary -->
-              <a href="" class="buttonPrimary" data-size="large" data-theme="none">
-                <span>Compra ora</span>
-                <svg viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path>
-                </svg>
-              </a>
-            </div><!-- Article Card -->
-          </li>
-          <li class="slider-li">
-            <!-- ========================================================== Article Card-->
-            <div class="articleCard" data-position="right">
-              <a class="articleCard-imgContainer" href="">
-                <img class="articleCard-img"
-                  src="https://www.lego.com/cdn/cs/set/assets/bltfb7985122c651466/1774-City-Home-202209-KV-Block-Standard.jpg?fit=crop&format=jpg&quality=80&width=635&height=440&dpr=2">
-                <div class="articleCard-logoContainer">
-                  <img
-                    src="https://www.lego.com/cdn/cs/set/assets/bltc6da097a00278f74/logo_city_logo_pos_300w.png?format=png&height=60&dpr=2">
-                  <img
-                    src="https://www.lego.com/cdn/cs/set/assets/blt0bb5a4455b19c633/stuntz_logo_pos_300w.png?format=png&height=60&dpr=2"
-                    alt="">
-                </div>
-              </a>
-              <h3>Costruiamo cose incredibili</h3>
-              <p>Sono arrivati i nuovi set Stuntz LEGO® City!</p>
-              <!-- Component Button Primary -->
-              <a href="" class="buttonPrimary" data-size="large" data-theme="none">
-                <span>Compra ora</span>
-                <svg viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path>
-                </svg>
-              </a>
-            </div><!-- Article Card -->
-          </li>
-          <li class="slider-li">
-            <!-- ========================================================== Article Card-->
-            <div class="articleCard" data-position="right">
-              <a class="articleCard-imgContainer" href="">
-                <img class="articleCard-img"
-                  src="https://www.lego.com/cdn/cs/set/assets/blt234264b132e705b2/T3-Star-Wars-202202-Block-Standard.jpg?fit=crop&format=jpg&quality=80&width=635&height=440&dpr=2">
-                <div class="articleCard-logoContainer">
-                  <img
-                    src="https://www.lego.com/cdn/cs/set/assets/blt3f7ffa57f5616241/starWars_logo_neg_100h.png?format=png&height=60&dpr=2">
-                </div>
-              </a>
-              <h3>Avverti la Forza</h3>
-              <p>Nuovi divertenti set LEGO® <i>Star&nbsp;Wars</i>™ per gli appassionati di tutte le età.</p>
-              <!-- Component Button Primary -->
-              <a href="" class="buttonPrimary" data-size="large" data-theme="none">
-                <span>Compra ora</span>
-                <svg viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path>
-                </svg>
-              </a>
-            </div><!-- Article Card -->
-          </li>
-          <li class="slider-li">
-            <!-- ========================================================== Article Card-->
-            <div class="articleCard" data-position="left">
-              <a class="articleCard-imgContainer" href="">
-                <img class="articleCard-img"
-                  src="https://www.lego.com/cdn/cs/set/assets/blt35a68402049cf9fd/Generic-T3-202204-PS-Block-Standard.jpg?fit=crop&format=jpg&quality=80&width=635&height=440&dpr=2">
-                <div class="articleCard-logoContainer">
-                  <img
-                    src="https://www.lego.com/cdn/cs/set/assets/blt00cd302276575b75/marvel_logo_pos_300w.png?format=png&height=60&dpr=2">
-                </div>
-              </a>
-              <h3>Incredibili avventure ti attendono</h3>
-              <p>I nuovi set LEGO® Marvel consentono ai fan di ricreare le azioni dei supereroi.</p>
-              <!-- Component Button Primary -->
-              <a href="" class="buttonPrimary" data-size="large" data-theme="none">
-                <span>Compra ora</span>
-                <svg viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path>
-                </svg>
-              </a>
-            </div><!-- Article Card -->
-          </li>
-          <li class="slider-li">
-            <!-- ========================================================== Article Card-->
-            <div class="articleCard" data-position="right">
-              <a class="articleCard-imgContainer" href="">
-                <img class="articleCard-img"
-                  src="https://www.lego.com/cdn/cs/set/assets/bltb16e114867145ebc/21189-T3-202208-PS-Block-Standard.jpg?fit=crop&format=jpg&quality=80&width=635&height=440&dpr=2">
-                <div class="articleCard-logoContainer">
-                  <img
-                    src="https://www.lego.com/cdn/cs/set/assets/blt556e482adab8d1bf/minecraft_logo_2022_pos-600w.png?format=png&height=60&dpr=2">
-                </div>
-              </a>
-              <h3>Esplorazione creativa senza fine</h3>
-              <p>Nuovi set LEGO® Minecraft® pieni di azione e di caratteristiche iconiche.</p>
-              <!-- Component Button Primary -->
-              <a href="" class="buttonPrimary" data-size="large" data-theme="none">
-                <span>Compra ora</span>
-                <svg viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path>
-                </svg>
-              </a>
-            </div><!-- Article Card -->
-          </li>
-        </ul>
-      </section>
-    </div>
-  </section>
-
   <section class="promoBanner-200">
-    <!-- ************************************************************************** Small Banner -->
-    <div class="smallBanner" data-skeleton="false" data-theme="orange" data-position="left">
-      <div class="smallBanner-display">
-        <picture>
-          <source type="image/webp" media="(min-width: 1024px)" srcset="https://www.lego.com/cdn/cs/set/assets/bltf86c335f3e8c31e2/SKU_Agnostic-Hero-Short-Large_2.jpg?fit=crop&format=jpg&quality=80&width=1600&height=200&dpr=3">
-          <img src="https://www.lego.com/cdn/cs/set/assets/blt150d8fd80cfc33e3/SKU_Agnostic-Hero-Short-Small_2.jpg?fit=crop&format=jpg&quality=80&width=600&height=264&dpr=2">
+    <!-- ************************************************************************** Banner -->
+    <div class="banner" data-size="small" data-theme="dark" data-position="right" data-skeleton="false">
+      <section class="bannerMedia">
+        <picture class="bannerPicture">
+          <source class="bannerPicture-source" type="image/webp" media="(min-width: 668px)" srcset="https://www.lego.com/cdn/cs/set/assets/blt53eaa60c1d559c55/40565-RayTheCastaway-202211-Home-Hero-Short-Large.jpg?fit=crop&format=jpg&quality=80&width=1600&height=200&dpr=2">
+          <img class="bannerPicture-img" src="https://www.lego.com/cdn/cs/set/assets/blt4857e56e6ec4f435/40565-RayTheCastaway-202211-Home-Hero-Short-Small.jpg?fit=crop&format=jpg&quality=80&width=600&height=264&dpr=2">
         </picture>
-      </div>
-      <section data-container="large">
-        <div class="smallBanner-content">
-          <p>Appassionati di cinema? Scopri i set ispirati ai film più popolari.</p>
-          <ul class="smallBanner-btnGroup">
-            <li class="smallBanner-btnContainer">
+        <!-- <img class="bannerMedia-mark" src="https://www.lego.com/cdn/cs/set/assets/bltfb987f8b1414454f/starWars_logo_black_stroke_300w.png?format=png&height=60&dpr=2" alt="Brand image"> -->
+      </section>
+      <div data-container="large">
+        <section class="bannerContent">
+          <!-- <img src="https://www.lego.com/cdn/cs/set/assets/bltfb987f8b1414454f/starWars_logo_black_stroke_300w.png?format=png&height=60&dpr=2" alt="Logo image"> -->
+          <h3>Un omaggio ispirato dai fan con gli acquisti LEGO® superiori a 120 €*</h3>
+          <ul class="banner-btnGroup">
+            <li class="banner-btnContainer">
               <!-- Component Button Primary -->
-              <a href="" class="buttonPrimary" data-template="button1" data-size="small" data-theme="dark">
-                <span>Scopri di più</span>
+              <a href="" class="buttonPrimary" data-size="small" data-theme="light" data-template="button1">
+                <span>Compra ora</span>
                 <svg viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
                   <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path>
                 </svg>
               </a>
             </li>
           </ul>
-        </div>
-      </section>
-    </div>
+        </section>
+      </div>
+    </div><!-- Banner -->
   </section>
 
   <section class="decorazioniNatalizie">
@@ -1342,7 +1201,7 @@
       </div>
     </header>
     <!-- ************************************************************************** Slider -->
-    <div class="slider" data-slides="four" data-skeleton="false">
+    <div class="slider" data-slides="two" data-skeleton="false">
       <section data-container="large">
         <ul class="slider-ul">
           <li class="slider-li">
@@ -1530,36 +1389,176 @@
   </section>
 
   <section class="promoBanner-200">
-    <!-- ************************************************************************** Small Banner -->
-    <div class="smallBanner" data-skeleton="false" data-theme="purple" data-position="left">
-      <div class="smallBanner-display">
-        <picture>
-          <source type="image/webp" media="(min-width: 1024px)"
-            srcset="https://www.lego.com/cdn/cs/set/assets/blte32fced8726c412b/Retiring-Home-202011-Hero01-Short-Large.jpg?fit=crop&format=jpg&quality=80&width=1600&height=200&dpr=3">
-          <img
-            src="https://www.lego.com/cdn/cs/set/assets/blt0d3d32a43e6424e3/Retiring-Home-202011-Hero01-Short-Small.jpg?fit=crop&format=jpg&quality=80&width=600&height=264&dpr=3">
+    <!-- ************************************************************************** Banner -->
+    <div class="banner" data-size="large" data-theme="halloween" data-position="center" data-skeleton="false">
+      <section class="bannerMedia">
+        <picture class="bannerPicture">
+          <source class="bannerPicture-source" type="image/webp" media="(min-width: 425px)" srcset="https://www.lego.com/cdn/cs/set/assets/blt9a1e1219e2ad2d5f/1802-Home-202209-GV-Hero-Standard-Large.jpg?fit=crop&format=jpg&quality=80&width=1600&height=500&dpr=3">
+          <img class="bannerPicture-img" src="https://www.lego.com/cdn/cs/set/assets/blt0cb0df86e0fc16f5/1802-Home-202209-GV-Hero-Standard-Small.jpg?fit=crop&format=jpg&quality=80&width=600&height=600&dpr=3">
         </picture>
-      </div>
-      <section data-container="large">
-        <div class="smallBanner-content">
-          <p>Non lasciarti sfuggire questi set LEGO®!</p>
-          <ul class="smallBanner-btnGroup">
-            <li class="smallBanner-btnContainer">
+        <!-- <img class="bannerMedia-mark" src="https://www.lego.com/cdn/cs/set/assets/bltfb987f8b1414454f/starWars_logo_black_stroke_300w.png?format=png&height=60&dpr=2" alt="Brand image"> -->
+      </section>
+      <div data-container="large">
+        <section class="bannerContent">
+          <!-- <img src="https://www.lego.com/cdn/cs/set/assets/bltfb987f8b1414454f/starWars_logo_black_stroke_300w.png?format=png&height=60&dpr=2" alt="Logo image"> -->
+          <h3>Mattoncino o scherzetto</h3>
+          <p>Costruisci un Halloween spaventosamente divertente con regali LEGO®, fantastiche attività, idee per le decorazioni e altro ancora.</p>
+          <ul class="banner-btnGroup">
+            <li class="banner-btnContainer">
               <!-- Component Button Primary -->
-              <a href="" class="buttonPrimary" data-template="button1" data-size="small" data-theme="light">
+              <a href="" class="buttonPrimary" data-size="large" data-theme="light" data-template="button1">
                 <span>Compra ora</span>
                 <svg viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
                   <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path>
                 </svg>
               </a>
             </li>
+            <li class="banner-btnContainer">
+              <!-- Component Button Primary -->
+              <a href="" class="buttonPrimary" data-size="large" data-theme="light" data-template="button1">
+                <span>Scopri di più</span>
+                <svg viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path>
+                </svg>
+              </a>
+            </li>
           </ul>
-        </div>
+        </section>
+      </div>
+    </div><!-- Banner -->
+  </section>
+
+  <section class="temiDiTendenza">
+    <!-- Component Page Header -->
+    <header class="pageHeader" data-position="left">
+      <div data-container="large">
+        <h1>Temi di tendenza</h1>
+      </div>
+    </header>
+    <!-- ************************************************************************** Slider -->
+    <div class="slider" data-slides="three" data-skeleton="false">
+      <section data-container="large">
+        <ul class="slider-ul">
+          <li class="slider-li">
+            <!-- ========================================================== Article Card-->
+            <div class="articleCard" data-position="right">
+              <a class="articleCard-imgContainer" href="">
+                <img class="articleCard-img"
+                  src="https://www.lego.com/cdn/cs/set/assets/blt95087b1ff9069b85/HarryPotter-T1-202108-KV-Block-Standard.jpg?fit=crop&format=jpg&quality=80&width=635&height=440&dpr=3">
+                <div class="articleCard-logoContainer">
+                  <img
+                    src="https://www.lego.com/cdn/cs/set/assets/bltc87b4d0a757a6632/harryPotter_logo_gold_neg_100h.png?format=png&height=60&dpr=2">
+                  <img
+                    src="https://www.lego.com/cdn/cs/set/assets/blt4fb1c3a4e8917247/wizardingWorld_logo_gold_300w.png?format=png&height=60&dpr=2"
+                    alt="">
+                </div>
+              </a>
+              <h3>Lancia un incantesimo per il divertimento</h3>
+              <p>Entusiasmanti magie ti attendono con LEGO® Harry Potter™.</p>
+              <!-- Component Button Primary -->
+              <a href="" class="buttonPrimary" data-size="large" data-theme="none">
+                <span>Compra ora</span>
+                <svg viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path>
+                </svg>
+              </a>
+            </div><!-- Article Card -->
+          </li>
+          <li class="slider-li">
+            <!-- ========================================================== Article Card-->
+            <div class="articleCard" data-position="right">
+              <a class="articleCard-imgContainer" href="">
+                <img class="articleCard-img"
+                  src="https://www.lego.com/cdn/cs/set/assets/bltfb7985122c651466/1774-City-Home-202209-KV-Block-Standard.jpg?fit=crop&format=jpg&quality=80&width=635&height=440&dpr=2">
+                <div class="articleCard-logoContainer">
+                  <img
+                    src="https://www.lego.com/cdn/cs/set/assets/bltc6da097a00278f74/logo_city_logo_pos_300w.png?format=png&height=60&dpr=2">
+                  <img
+                    src="https://www.lego.com/cdn/cs/set/assets/blt0bb5a4455b19c633/stuntz_logo_pos_300w.png?format=png&height=60&dpr=2"
+                    alt="">
+                </div>
+              </a>
+              <h3>Costruiamo cose incredibili</h3>
+              <p>Sono arrivati i nuovi set Stuntz LEGO® City!</p>
+              <!-- Component Button Primary -->
+              <a href="" class="buttonPrimary" data-size="large" data-theme="none">
+                <span>Compra ora</span>
+                <svg viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path>
+                </svg>
+              </a>
+            </div><!-- Article Card -->
+          </li>
+          <li class="slider-li">
+            <!-- ========================================================== Article Card-->
+            <div class="articleCard" data-position="right">
+              <a class="articleCard-imgContainer" href="">
+                <img class="articleCard-img"
+                  src="https://www.lego.com/cdn/cs/set/assets/blt234264b132e705b2/T3-Star-Wars-202202-Block-Standard.jpg?fit=crop&format=jpg&quality=80&width=635&height=440&dpr=2">
+                <div class="articleCard-logoContainer">
+                  <img
+                    src="https://www.lego.com/cdn/cs/set/assets/blt3f7ffa57f5616241/starWars_logo_neg_100h.png?format=png&height=60&dpr=2">
+                </div>
+              </a>
+              <h3>Avverti la Forza</h3>
+              <p>Nuovi divertenti set LEGO® <i>Star&nbsp;Wars</i>™ per gli appassionati di tutte le età.</p>
+              <!-- Component Button Primary -->
+              <a href="" class="buttonPrimary" data-size="large" data-theme="none">
+                <span>Compra ora</span>
+                <svg viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path>
+                </svg>
+              </a>
+            </div><!-- Article Card -->
+          </li>
+          <li class="slider-li">
+            <!-- ========================================================== Article Card-->
+            <div class="articleCard" data-position="left">
+              <a class="articleCard-imgContainer" href="">
+                <img class="articleCard-img"
+                  src="https://www.lego.com/cdn/cs/set/assets/blt35a68402049cf9fd/Generic-T3-202204-PS-Block-Standard.jpg?fit=crop&format=jpg&quality=80&width=635&height=440&dpr=2">
+                <div class="articleCard-logoContainer">
+                  <img
+                    src="https://www.lego.com/cdn/cs/set/assets/blt00cd302276575b75/marvel_logo_pos_300w.png?format=png&height=60&dpr=2">
+                </div>
+              </a>
+              <h3>Incredibili avventure ti attendono</h3>
+              <p>I nuovi set LEGO® Marvel consentono ai fan di ricreare le azioni dei supereroi.</p>
+              <!-- Component Button Primary -->
+              <a href="" class="buttonPrimary" data-size="large" data-theme="none">
+                <span>Compra ora</span>
+                <svg viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path>
+                </svg>
+              </a>
+            </div><!-- Article Card -->
+          </li>
+          <li class="slider-li">
+            <!-- ========================================================== Article Card-->
+            <div class="articleCard" data-position="right">
+              <a class="articleCard-imgContainer" href="">
+                <img class="articleCard-img"
+                  src="https://www.lego.com/cdn/cs/set/assets/bltb16e114867145ebc/21189-T3-202208-PS-Block-Standard.jpg?fit=crop&format=jpg&quality=80&width=635&height=440&dpr=2">
+                <div class="articleCard-logoContainer">
+                  <img
+                    src="https://www.lego.com/cdn/cs/set/assets/blt556e482adab8d1bf/minecraft_logo_2022_pos-600w.png?format=png&height=60&dpr=2">
+                </div>
+              </a>
+              <h3>Esplorazione creativa senza fine</h3>
+              <p>Nuovi set LEGO® Minecraft® pieni di azione e di caratteristiche iconiche.</p>
+              <!-- Component Button Primary -->
+              <a href="" class="buttonPrimary" data-size="large" data-theme="none">
+                <span>Compra ora</span>
+                <svg viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path>
+                </svg>
+              </a>
+            </div><!-- Article Card -->
+          </li>
+        </ul>
       </section>
     </div>
   </section>
-
-
 
   <section class="leggiTutto">
     <!-- Component Page Header -->
