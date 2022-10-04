@@ -1078,312 +1078,223 @@ details.addToWishlist > summary::-webkit-details-marker {
     display: none;
   }
 }
-.bigBanner {
+.banner {
   position: relative;
   display: flex;
   flex-direction: column;
 }
 
-.bigBanner-display {
+.bannerMedia {
   position: relative;
   display: flex;
   flex-direction: column;
   width: 100%;
 }
-.bigBanner-display picture {
+
+.bannerPicture {
   display: flex;
   flex-direction: column;
   width: 100%;
   height: auto;
 }
-.bigBanner-display picture img {
+
+.bannerPicture-img {
   width: 100%;
   height: auto;
 }
-.bigBanner-display .imageBrand {
+
+.bannerMedia-mark {
   position: absolute;
   bottom: 1rem;
   right: 1rem;
-  height: 3.5rem;
+  height: 3rem;
   width: auto;
 }
 
-.bigBanner-content {
+.bannerContent {
+  position: relative;
   display: flex;
   flex-direction: column;
   text-align: center;
   padding: 2rem;
 }
-.bigBanner-content img {
+
+.bannerContent img {
   display: none;
 }
 
-.bigBanner[data-theme=light] .bigBanner-content {
-  background-color: white;
-  color: black;
-}
-
-.bigBanner[data-theme=dark] .bigBanner-content {
-  background-color: black;
-  color: white;
-}
-
-.bigBanner[data-theme=purple] .bigBanner-content {
-  background-color: #130e2f;
-  color: white;
-}
-
-.bigBanner[data-theme=blue] .bigBanner-content {
-  background-color: var(--blue-800);
-  color: white;
-}
-
-.bigBanner-content h3,
-.bigBanner-content p {
+.bannerContent h3 {
+  font-family: regular;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  font-family: "ceraPro-Regular";
   padding: 0.5rem 0;
 }
 
-.bigBanner-content h3 {
-  font-family: medium;
-  font-size: 1.25rem;
-  line-height: 1.2;
-  font-family: "ceraPro-Medium";
-}
-
-.bigBanner-content p {
+.bannerContent p {
   font-family: regular;
   font-size: 0.875rem;
   line-height: 1.4;
   font-family: "ceraPro-Regular";
-}
-
-.bigBanner-btnGroup {
-  display: flex;
-  flex-direction: column;
-}
-
-.bigBanner-btnContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
   padding: 0.5rem 0;
 }
 
-@media only screen and (min-width: 425px) {
-  .bigBanner {
-    justify-content: center;
-    align-items: center;
-  }
-  .bigBanner [data-container] {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-  }
-  .imageBrand {
-    display: none;
-  }
-  .bigBanner[data-position=right] [data-container] {
-    align-items: flex-end;
-  }
-  .bigBanner[data-position=right] [data-container] .bigBanner-content {
-    align-items: flex-end;
-    text-align: right;
-  }
-  .bigBanner[data-position=right] [data-container] .bigBanner-btnGroup {
-    justify-content: right;
-  }
-  .bigBanner[data-position=left] [data-container] {
-    align-items: flex-start;
-  }
-  .bigBanner[data-position=left] [data-container] .bigBanner-content {
-    align-items: flex-start;
-    text-align: left;
-  }
-  .bigBanner[data-position=left] [data-container] .bigBanner-btnGroup {
-    justify-content: left;
-  }
-  .bigBanner-content {
-    width: 50%;
-    padding: 0;
-  }
-  .bigBanner[data-theme=dark] .bigBanner-content,
-.bigBanner[data-theme=light] .bigBanner-content,
-.bigBanner[data-theme=purple] .bigBanner-content,
-.bigBanner[data-theme=blue] .bigBanner-content {
-    background-color: transparent;
-  }
-  .bigBanner-content img {
-    display: flex;
-    width: auto;
-    height: 3.5rem;
-  }
-  .bigBanner-content h3 {
-    font-family: regular;
-    font-size: 3rem;
-    line-height: 1;
-    font-family: "ceraPro-Regular";
-    padding: 1rem 0;
-  }
-  .bigBanner-content p {
-    font-family: regular;
-    font-size: 1.25rem;
-    line-height: 1.2;
-    font-family: "ceraPro-Regular";
-    padding: 1rem 0;
-  }
-  .bigBanner-btnGroup {
-    flex-direction: row;
-    padding: 1rem 0;
-  }
-  .bigBanner[data-position=left] .bigBanner-btnGroup li:first-child {
-    padding-right: 1rem;
-  }
-  .bigBanner[data-position=right] .bigBanner-btnGroup li:last-child {
-    padding-left: 1rem;
-  }
-}
-.smallBanner {
-  position: relative;
+.banner-btnGroup {
   display: flex;
   flex-direction: column;
+  padding: 0.5rem 0;
 }
 
-.smallBanner-display {
-  position: relative;
+.banner-btnContainer {
   display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-.smallBanner-display picture {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: auto;
-}
-.smallBanner-display picture img {
-  width: 100%;
-  height: auto;
+  flex-direction: row;
+  justify-content: center;
+  flex-shrink: 0;
+  padding: 0.5rem 0;
 }
 
-.smallBanner-content {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  padding: 2rem;
-}
-
-.smallBanner[data-theme=light] .smallBanner-content {
+.banner[data-theme=light] .bannerContent {
   background-color: white;
   color: black;
 }
 
-.smallBanner[data-theme=dark] .smallBanner-content {
+.banner[data-theme=dark] .bannerContent {
   background-color: black;
   color: white;
 }
 
-.smallBanner[data-theme=purple] .smallBanner-content {
+.banner[data-theme=purple] .bannerContent {
   background-color: #130e2f;
   color: white;
 }
 
-.smallBanner[data-theme=blue] .smallBanner-content {
+.banner[data-theme=blue] .bannerContent {
   background-color: var(--blue-800);
   color: white;
 }
 
-.smallBanner[data-theme=orange] .smallBanner-content {
-  background-color: var(--orange-500);
-  color: black;
+.banner[data-theme=halloween] .bannerContent {
+  background-color: #7a36bf;
+  color: white;
 }
 
-.smallBanner-content h3,
-.smallBanner-content p {
-  padding: 0.5rem 0;
-}
-
-.smallBanner-content h3 {
-  font-family: medium;
-  font-size: 1.25rem;
-  line-height: 1.2;
-  font-family: "ceraPro-Medium";
-}
-
-.smallBanner-content p {
-  font-family: regular;
-  font-size: 1.25rem;
-  line-height: 1.2;
-  font-family: "ceraPro-Regular";
-}
-
-.smallBanner-btnGroup {
-  display: flex;
-  flex-direction: column;
-}
-
-.smallBanner-btnContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 0.5rem 0;
-}
-
+/* ================================================================ Responsive */
 @media only screen and (min-width: 425px) {
-  .smallBanner {
-    justify-content: center;
-    align-items: center;
-  }
-  .smallBanner [data-container] {
+  .bannerMedia {
     position: absolute;
-    display: flex;
-    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
   }
-  .smallBanner[data-position=right] [data-container] {
-    align-items: flex-end;
+  .bannerPicture {
+    position: absolute;
+    width: 100%;
+    height: 100%;
   }
-  .smallBanner[data-position=right] [data-container] .smallBanner-content {
-    text-align: right;
+  .bannerPicture-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
-  .smallBanner[data-position=right] [data-container] .smallBanner-btnGroup {
-    justify-content: right;
-  }
-  .smallBanner[data-position=left] [data-container] {
-    align-items: flex-start;
-  }
-  .smallBanner[data-position=left] [data-container] .smallBanner-content {
-    text-align: left;
-  }
-  .smallBanner[data-position=left] [data-container] .smallBanner-btnGroup {
-    justify-content: left;
-  }
-  .smallBanner-content {
+  .bannerContent {
+    z-index: 1;
     width: 50%;
-    padding: 0;
   }
-  .smallBanner[data-theme] .smallBanner-content {
+  .banner[data-size=large] .bannerContent {
+    padding: 5vmax 0;
+  }
+  .banner[data-size=large] .bannerContent img {
+    display: flex;
+    width: auto;
+    height: 3rem;
+    margin-bottom: 0.5rem;
+    margin: 1rem 0;
+  }
+  .banner[data-size=large] .bannerContent h3 {
+    font-size: 4vmax;
+  }
+  .banner[data-size=large] .bannerContent p {
+    font-size: 2vmax;
+  }
+  .banner[data-size=small] .bannerContent {
+    padding: 3vmax 0;
+  }
+  .banner[data-size=small] .bannerContent img {
+    display: flex;
+    width: auto;
+    height: 2rem;
+    margin: 1rem 0;
+  }
+  .banner[data-size=small] .bannerContent h3,
+.banner[data-size=small] .bannerContent p {
+    font-size: 2vmax;
+  }
+  .banner[data-theme] .bannerContent {
     background-color: transparent;
   }
-  .smallBanner-content h3 {
-    font-family: regular;
-    font-size: 3rem;
-    line-height: 1;
-    font-family: "ceraPro-Regular";
+  .banner[data-position=left] .bannerContent {
+    text-align: left;
+    align-self: flex-start;
+    align-items: flex-start;
+  }
+  .banner[data-position=left] .banner-btnGroup {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: left;
+  }
+  .banner[data-position=left] .banner-btnContainer:first-child {
+    margin-right: 1rem;
+  }
+  .banner[data-position=right] .bannerMedia-mark {
+    left: 1rem;
+    right: inherit;
+  }
+  .banner[data-position=right] .bannerContent {
+    text-align: right;
+    align-self: flex-end;
+    align-items: flex-end;
+  }
+  .banner[data-position=right] .banner-btnGroup {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: right;
+  }
+  .banner[data-position=right] .banner-btnContainer:last-child {
+    margin-left: 1rem;
+  }
+  .banner[data-position=center] .bannerContent {
+    text-align: center;
+    align-self: center;
+    align-items: center;
+  }
+  .banner[data-position=center] .banner-btnGroup {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .banner[data-position=center] .banner-btnContainer {
+    margin: 0 0.5rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .banner[data-size=large] .bannerContent {
+    padding: 7vmax 0;
+  }
+  .banner[data-size=large] .bannerContent h3 {
+    font-size: 3vmax;
     padding: 1rem 0;
   }
-  .smallBanner-content p {
-    font-family: regular;
-    font-size: 1.5rem;
-    line-height: 1;
-    font-family: "ceraPro-Regular";
-    padding: 0;
-    margin-bottom: 2rem;
+  .banner[data-size=large] .bannerContent p {
+    font-size: 1.5vmax;
   }
-  .smallBanner-btnGroup {
-    flex-direction: row;
-    padding: 0;
+  .banner[data-size=small] .bannerContent {
+    padding: 3vmax 0;
   }
-  .smallBanner-btnContainer {
-    padding: 0;
+  .banner[data-size=small] .bannerContent h3,
+.banner[data-size=small] .bannerContent p {
+    font-size: 1.5vmax;
   }
 }
 /* =========================================================== Template 300 */
@@ -1523,6 +1434,9 @@ details.addToWishlist > summary::-webkit-details-marker {
   .slider-li {
     padding: 0 1rem;
   }
+  .slider[data-slides=two] .slider-li {
+    flex-basis: 50%;
+  }
   .slider[data-slides=three] .slider-li {
     flex-basis: 50%;
   }
@@ -1534,6 +1448,9 @@ details.addToWishlist > summary::-webkit-details-marker {
   }
 }
 @media only screen and (min-width: 768px) {
+  .slider[data-slides=two] .slider-li {
+    flex-basis: 50%;
+  }
   .slider[data-slides=three] .slider-li {
     flex-basis: 33.33%;
   }

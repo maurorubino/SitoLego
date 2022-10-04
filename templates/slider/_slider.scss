@@ -62,6 +62,10 @@
     padding: 0 $size-16;
   }
 
+  .slider[data-slides=two] .slider-li{
+    flex-basis: 50%;
+  }
+
   .slider[data-slides=three] .slider-li{
     flex-basis: 50%;
   }
@@ -76,6 +80,10 @@
 }
 
 @media only screen and (min-width: $tablet) {
+  .slider[data-slides=two] .slider-li{
+    flex-basis: 50%;
+  }
+  
   .slider[data-slides=three] .slider-li{
     flex-basis: 33.33%;
   }
